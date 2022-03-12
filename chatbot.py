@@ -9,8 +9,8 @@ app.secret_key="abc"
 @app.route('/',methods=['get','post'])
 def login():
     if request.method=="POST":
-        username=request.form['textfield']
-        password=request.form['textfield2']
+        username=request.form['username']
+        password=request.form['pass']
         db = Db()
         qry=db.selectOne("select * from login where username='"+username+"' and password='"+password+"'")
         if qry is not None:
@@ -168,12 +168,71 @@ def add_group():
     if request.method=="POST":
         groups = request.form['textfield']
         db = Db()
-        db.insert("insert into group(group_name) VALUES('"+groups+"')")
+        qry = db.insert(" insert into group VALUES('" + groups + "')")
         return '''<script>alert('added successfully');window.location="/teacher_homepage"</script>'''
 
     else:
        return render_template('TEACHER/add group.html')
 
+
+@app.route('/manage_group')
+def manage_group():
+    return render_template('TEACHER/manage group.html')
+
+
+@app.route('/create_events',methods=['get','post'])
+def create_events():
+    if request.method=="POST":
+        events = request.form['textfield']
+        description=request.form['textfield2']
+
+        db = Db()
+        qry = db.insert(" insert into event(events,description,date,status) VALUES('" + events + "','"+description+"',curdate(),'pending')")
+        return '''<script>alert('added successfully');window.location="/teacher_homepage"</script>'''
+
+    else:
+       return render_template('TEACHER/create events.html')
+
+
+
+@app.route('/view_event_status')
+def view_event_status():
+    db = Db()
+    qry = db.select("SELECT * FROM event,teacher WHERE event.event_id=teacher.teacher_id")
+    return render_template('TEACHER/view event status.html',data=qry)
+
+@app.route('/view_notifications')
+def view_notifications():
+    db = Db()
+    qry = db.select("SELECT * FROM notification")
+    return render_template('TEACHER/view notifications.html',data=qry)
+
+
+@app.route('/share_idea',methods=['get','post'])
+def share_idea():
+    if request.method=="POST":
+        Idea = request.form['textarea']
+
+        db = Db()
+        qry = db.insert(" insert into ideas(ideas,date) VALUES('" + Idea + "',curdate())")
+        return '''<script>alert('added successfully');window.location="/teacher_homepage"</script>'''
+
+    else:
+       return render_template('TEACHER/share ideas.html')
+
+
+@app.route('/share_articles',methods=['get','post'])
+def share_articles():
+    if request.method=="POST":
+        articlename = request.form['textarea']
+        article = request.form['textarea']
+
+        db = Db()
+        qry = db.insert(" insert into ideas(ideas,date) VALUES('" + Idea + "',curdate())")
+        return '''<script>alert('added successfully');window.location="/teacher_homepage"</script>'''
+
+    else:
+       return render_template('TEACHER/share ideas.html')
 
 if __name__ == '__main__':
     app.run()

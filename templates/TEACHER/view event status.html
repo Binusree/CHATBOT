@@ -15,14 +15,15 @@
       <th scope="col">status</th>
       <th scope="col">description</th>
       
-    </tr>
+     {% for i in data %}
     <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-           <td>&nbsp;</td>
+      <td>{{ loop.index }}</td>
+        <td>&nbsp;{{ i.events }}</td>
+        <td>&nbsp;{{ i.status }}</td>
+        <td>&nbsp;{{ i.description }}</td>
 
     </tr>
+      {% endfor %}
   </table>
 </form>
 </body>
