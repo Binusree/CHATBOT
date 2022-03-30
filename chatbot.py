@@ -1,10 +1,11 @@
-from flask import Flask,render_template,request,session
+from flask import Flask,render_template,request,session,redirect
+import demjson
 import datetime
 from  DBConnection import Db
 
 app = Flask(__name__)
 app.secret_key="abc"
-
+app.debug=True
 
 @app.route('/',methods=['get','post'])
 def login():
@@ -15,8 +16,11 @@ def login():
         qry=db.selectOne("select * from login where username='"+username+"' and password='"+password+"'")
         if qry is not None:
             if qry['user_type']=='admin':
+                session['lg']='lin'
                 return '''<script>alert('login successfully');window.location="/admin_homepage"</script>'''
             elif qry['user_type']=='teacher':
+                session['lg']='lin'
+
                 session['lid']=qry['login_id']
                 return '''<script>alert('login successfully');window.location="/teacher_homepage"</script>'''
             else:
@@ -30,209 +34,411 @@ def login():
 
 @app.route('/admin_homepage')
 def homepage():
-    return  render_template('ADMIN/homepage.html')
-
+    if session['lg']=='lin':
+        return  render_template('ADMIN/adminhomeindex.html')
+    else:
+        return redirect('/')
 
 
 @app.route('/view_approved_teachers')
 def view_approved_teachers():
-    db=Db()
-    qry=db.select("SELECT * FROM login,teacher WHERE teacher.teacher_id=login.login_id AND login.user_type='teacher'")
+    if session['lg']=="lin":
+        db=Db()
+        qry=db.select("SELECT * FROM login,teacher WHERE teacher.teacher_id=login.login_id AND login.user_type='teacher'")
 
-    return render_template('ADMIN/view approved teachers.html',data=qry)
-
+        return render_template('ADMIN/approvedteacher.html',data=qry)
+    else:
+        return redirect('/')
 @app.route('/block_teacher/<tid>')
 def block_teacher(tid):
-    db=Db()
-    db.update("update login set user_type='blocked' where login_id='" + tid + "' ")
-
-    return '''<script>alert('blocked');window.location="/view_approved_teachers"</script>'''
+    if session['lg'] == "lin":
+        db=Db()
+        db.update("update login set user_type='blocked' where login_id='" + tid + "' ")
+        return '''<script>alert('blocked');window.location="/view_approved_teachers"</script>'''
+    else:
+        return redirect('/')
 @app.route('/unblock_teacher/<tid>')
 def unblock_teacher(tid):
-    db=Db()
-    db.update("update login set user_type='teacher' where login_id='" + tid + "' ")
+    if session['lg'] == "lin":
+        db=Db()
+        db.update("update login set user_type='teacher' where login_id='" + tid + "' ")
 
-    return '''<script>alert('unblock');window.location="/view_approved_teachers"</script>'''
-
+        return '''<script>alert('unblock');window.location="/view_blocked_teachers"</script>'''
+    else:
+        return redirect('/')
 
 @app.route('/view_blocked_teachers')
 def view_blocked_teachers():
-    db = Db()
-    qry = db.select("SELECT * FROM login,teacher WHERE teacher.teacher_id=login.login_id AND login.user_type='blocked'")
+    if session['lg'] == "lin":
+        db = Db()
+        qry = db.select("SELECT * FROM login,teacher WHERE teacher.teacher_id=login.login_id AND login.user_type='blocked'")
 
-    return render_template('ADMIN/view blocked teachers.html',data=qry)
-
+        return render_template('ADMIN/blockedteacher.html',data=qry)
+    else:
+        return redirect('/')
 
 
 @app.route('/view_registered_teachers')
 def view_registered_teachers():
-    db = Db()
-    qry = db.select("SELECT * FROM login,teacher WHERE teacher.teacher_id=login.login_id AND login.user_type='pending'")
+    if session['lg'] == "lin":
+        db = Db()
+        qry = db.select("SELECT * FROM login,teacher WHERE teacher.teacher_id=login.login_id AND login.user_type='pending'")
 
-    return render_template('ADMIN/view registerd teacher.html',data=qry)
+        return render_template('ADMIN/registeredteacher.html',data=qry)
+    else:
+        return redirect('/')
 
 @app.route('/approve_teacher/<tid>')
 def approve_teacher(tid):
-    db=Db()
-    db.update("update login set user_type='teacher' where login_id='"+tid+"' ")
-    return '''<script>alert('approved');window.location="/view_registered_teachers"</script>'''
+    if session['lg'] == "lin":
+        db=Db()
+        db.update("update login set user_type='teacher' where login_id='"+tid+"' ")
+        return '''<script>alert('approved');window.location="/view_registered_teachers"</script>'''
+    else:
+        return redirect('/')
 
 @app.route('/reject_teacher/<tid>')
 def reject_teacher(tid):
-    db=Db()
-    db.delete("delete from login where login_id='"+tid+"'")
-    db.delete("delete from teacher where teacher_id='"+tid+"'")
-    return '''<script>alert('rejected');window.location="/view_registered_teachers"</script>'''
+    if session['lg'] == "lin":
+        db=Db()
+        db.delete("delete from login where login_id='"+tid+"'")
+        db.delete("delete from teacher where teacher_id='"+tid+"'")
+        return '''<script>alert('rejected');window.location="/view_registered_teachers"</script>'''
 
-
+    else:
+        return redirect('/')
 
 
 @app.route('/view_events_approval')
 def view_events_approval():
-    db = Db()
-    qry = db.select("SELECT * FROM event,teacher WHERE teacher.teacher_id=event.event_id ")
-    return render_template('ADMIN/view events & approval.html', data=qry)
+    if session['lg'] == "lin":
+        db = Db()
+        qry = db.select("SELECT * FROM event,teacher WHERE teacher.teacher_id=event.event_id ")
+        return render_template('ADMIN/view events & approval.html', data=qry)
+    else:
+        return redirect('/')
+
 @app.route('/approve_events/<eid>')
 def approve_events(eid):
-    db=Db()
-    db.update("update event set status='approved' where event_id='"+eid+"' ")
-    return '''<script>alert('approved');window.location="/view_events_approval"</script>'''
+    if session['lg'] == "lin":
+        db=Db()
+        db.update("update event set status='approved' where event_id='"+eid+"' ")
+        return '''<script>alert('approved');window.location="/view_events_approval"</script>'''
+    else:
+        return redirect('/')
 @app.route('/reject_events/<eid>')
 def reject_events(eid):
-    db=Db()
-    db.delete("delete from event where event_id='" + eid + "'")
-    return '''<script>alert('rejected');window.location="/view_events_approval"</script>'''
-
+    if session['lg'] == "lin":
+        db=Db()
+        db.delete("delete from event where event_id='" + eid + "'")
+        return '''<script>alert('rejected');window.location="/view_events_approval"</script>'''
+    else:
+        return redirect('/')
 
 @app.route('/view_feedback')
 def view_feedback():
-    db = Db()
-    qry = db.select("SELECT feedbacks,student_name FROM feedback,student WHERE feedback.feedback_id=student.student_id")
-    return render_template('ADMIN/view feedback.html',data=qry)
+    if session['lg'] == "lin":
+        db = Db()
+        qry = db.select("SELECT feedbacks,student_name FROM feedback,student WHERE feedback.feedback_id=student.student_id")
+        return render_template('ADMIN/view feedback.html',data=qry)
 
-
+    else:
+        return redirect('/')
 
 @app.route('/sent_notifications',methods=['get','post'])
 def sent_notifications():
-    if request.method=="POST":
-        notifications = request.form['textarea']
-        db = Db()
-        qry=db.insert("insert into notification(notification,date) VALUES('"+notifications+"',curdate())")
-        return '''<script>alert('added successfully');window.location="/admin_homepage"</script>'''
+    if session['lg'] == "lin":
+        if request.method=="POST":
+            notifications = request.form['textarea']
+            db = Db()
+            qry=db.selectOne("select * from notification where notification='"+notifications+"' ")
+            if qry is not None:
+                return '''<script>alert('Already added ');window.location="/sent_notifications"</script>'''
+            else:
+                qry=db.insert("insert into notification(notification,date) VALUES('"+notifications+"',curdate())")
+                return '''<script>alert('added successfully');window.location="/admin_homepage"</script>'''
 
+        else:
+            return render_template('ADMIN/sent notifications.html')
     else:
-        return render_template('ADMIN/sent notifications.html')
+        return redirect('/')
 
+
+# -----------------------------------------------------------------------------------------------------------------------------------------------------
+#                                                       TEACHER MODULE
+# -----------------------------------------------------------------------------------------------------------------------------------------------------
 
 @app.route('/teacher_homepage')
 def teacher_homepage():
-    return  render_template('TEACHER/teacher_homepage.html')
+    if session['lg'] == 'lin':
+        return  render_template('TEACHER/teacher_homeindex.html')
+    else:
+        return redirect('/')
+
+
 
 @app.route('/teacher_sign',methods=['get','post'])
 def teacher_sign():
     if request.method=="POST":
-        teachername=request.form['textfield']
-        place= request.form['textfield2']
-        post = request.form['textfield3']
-        pin = request.form['textfield4']
+        teachername=request.form['name']
+        place= request.form['place']
+        post = request.form['post']
+        pin = request.form['pin']
         photo= request.files['fileField']
         date=datetime.datetime.now().strftime("%y%m%d-%H%M%S")
-        photo.save(r"C:\Users\HP\PycharmProjects\chatbot\static\teacher_photo\\"+date+'.jpg')
+        # photo.save(r"C:\Users\HP\PycharmProjects\chatbot\static\teacher_photo\\"+date+'.jpg')
+        photo.save(r"C:\Users\IDZ\Downloads\chatbot\static\teacher_photo\\"+date+'.jpg')
         path="/static/teacher_photo/"+date+'.jpg'
         gender = request.form['RadioGroup1']
-        qualification = request.form['textfield7']
-        phoneno = request.form['textfield8']
-        email = request.form['textfield9']
-        password = request.form['textfield10']
-        confirm_password= request.form['textfield11']
+        qualification = request.form['qualification']
+        phoneno = request.form['no']
+        email = request.form['email']
+        password = request.form['pass']
+        confirm_password= request.form['conpass']
         db = Db()
-        if password==confirm_password:
-            qry = db.insert("insert into login(username,password,user_type) VALUES('" + email + "','" + confirm_password + "','pending')")
-            db.insert("insert into teacher VALUES('"+str(qry)+"','"+teachername+"','"+place+"','"+post+"','"+pin+"','"+str(path)+"','"+gender+"','"+qualification+"','"+phoneno+"','"+email+"')")
-
-            return '''<script>alert('added successfully');window.location="/teacher_homepage"</script>'''
+        qry1=db.selectOne("select * from login WHERE username='"+email+"'")
+        if qry1 is not None:
+            return '''<script>alert('Already mail exist');window.location="/teacher_sign"</script>'''
         else:
-            return '''<script>alert('password mismatch');window.location="/teacher_sign"</script>'''
+            if password==confirm_password:
+                    qry = db.insert("insert into login(username,password,user_type) VALUES('" + email + "','" + confirm_password + "','pending')")
+                    db.insert("insert into teacher VALUES('"+str(qry)+"','"+teachername+"','"+place+"','"+post+"','"+pin+"','"+str(path)+"','"+gender+"','"+qualification+"','"+phoneno+"','"+email+"')")
+
+                    return '''<script>alert('added successfully');window.location="/"</script>'''
+            else:
+                    return '''<script>alert('password mismatch');window.location="/teacher_sign"</script>'''
+
     else:
-        return render_template('TEACHER/teacher_sign.html')
+        return render_template('TEACHER/teacherregisteration.html')
 
 
-@app.route('/view_update_teacher_profile')
+@app.route('/view_update_teacher_profile',methods=['get','post'])
 def view_update_teacher_profile():
+    if session['lg'] == "lin":
+        if request.method == "POST":
+            teachername = request.form['textfield']
+            place = request.form['textfield2']
+            post = request.form['textfield3']
+            pin = request.form['textfield4']
+            photo = request.files['fileField']
+            date = datetime.datetime.now().strftime("%y%m%d-%H%M%S")
+            photo.save(r"C:\Users\HP\PycharmProjects\chatbot\static\teacher_photo\\" + date + '.jpg')
+            path = "/static/teacher_photo/" + date + '.jpg'
+            gender = request.form['RadioGroup1']
+            qualification = request.form['textfield7']
+            phoneno = request.form['textfield8']
+            email = request.form['textfield9']
+            db=Db()
+            if request.files!=None:
+                if photo.filename!="":
+                    db.update("update teacher set teacher_name='"+teachername+"',place='"+place+"',post='"+post+"',pin='"+pin+"',photo='"+str(path)+"',gender='"+gender+"',qualification='"+qualification+"',phoneno='"+phoneno+"',email='"+email+"' where teacher_id='"+str(session['lid'])+"'")
+                    return '''<script>alert('update successfully');window.location="/view_update_teacher_profile "</script>'''
 
-        return render_template('TEACHER/view and update profile.html')
+                else:
+                    db.update("update teacher set teacher_name='"+teachername+"',place='"+place+"',post='"+post+"',pin='"+pin+"',gender='"+gender+"',qualification='"+qualification+"',phoneno='"+phoneno+"',email='"+email+"' where teacher_id='"+str(session['lid'])+"'")
+                    return '''<script>alert('update successfully');window.location="/view_update_teacher_profile "</script>'''
 
+            else:
+                db.update("update teacher set teacher_name='" + teachername + "',place='" + place + "',post='" + post + "',pin='" + pin + "',gender='" + gender + "',qualification='" + qualification + "',phoneno='" + phoneno + "',email='" + email + "' where teacher_id='" + str(session['lid']) + "'")
+                return '''<script>alert('update successfully');window.location="/view_update_teacher_profile "</script>'''
+        else:
+            db=Db()
+            qry = db.selectOne("select * from teacher where teacher_id='"+str(session['lid'])+"'")
+
+            return render_template('TEACHER/view and update profile.html',data=qry)
+    else:
+        return redirect('/')
 
 @app.route('/add_group',methods=['get','post'])
 def add_group():
-    if request.method=="POST":
-        groups = request.form['textfield']
-        db = Db()
-        qry = db.insert(" insert into group VALUES('" + groups + "')")
-        return '''<script>alert('added successfully');window.location="/teacher_homepage"</script>'''
+    if session['lg'] == "lin":
+        if request.method=="POST":
+            groups = request.form['textfield']
+            db = Db()
+            qry1=db.selectOne("select * from groups WHERE group_name='"+groups+"' ")
+            if qry1 is not None:
+                return '''<script>alert('Already added ');window.location="/add_group"</script>'''
+            else:
+                qry = db.insert(" insert into groups(teacher_id,group_name) VALUES('"+str(session['lid'])+"','" + groups + "')")
+                return '''<script>alert('added successfully');window.location="/teacher_homepage"</script>'''
 
+        else:
+            return render_template('TEACHER/add group.html')
     else:
-       return render_template('TEACHER/add group.html')
+        return redirect('/')
 
+@app.route('/add_group_members',methods=['get','post'])
+def add_group_members():
+    if session['lg'] == "lin":
+        if request.method=="POST":
+            groupname = request.form['select']
+            studentname = request.form['select2']
+            db = Db()
+            qry1=db.selectOne("select * from group_members WHERE group_id='"+groupname+"' and student_id='"+studentname+"' ")
+            if qry1 is not None:
+                return '''<script>alert('Already added ');window.location="/add_group_members"</script>'''
+            else:
+                qry = db.insert(" insert into group_members(group_id,student_id) VALUES('"+groupname+"','"+studentname+"')")
+                return '''<script>alert('added successfully');window.location="/teacher_homepage"</script>'''
+        else:
+            db=Db()
+            qry=db.select("select * from groups where teacher_id='"+str(session['lid'])+"'")
+            qry1=db.select("select * from student")
+            return render_template('TEACHER/add group member.html',data=qry,data1=qry1)
+    else:
+        return redirect('/')
 
-@app.route('/manage_group')
-def manage_group():
-    return render_template('TEACHER/manage group.html')
 
 
 @app.route('/create_events',methods=['get','post'])
 def create_events():
-    if request.method=="POST":
-        events = request.form['textfield']
-        description=request.form['textfield2']
+    if session['lg'] == "lin":
+        if request.method=="POST":
+            events = request.form['textfield']
+            description=request.form['textarea']
+            db = Db()
+            qry = db.insert(" insert into event(teacher_id,events,description,date,status) VALUES('"+str(session['lid'])+"','" + events + "','"+description+"',curdate(),'pending')")
+            return '''<script>alert('added successfully');window.location="/teacher_homepage"</script>'''
 
-        db = Db()
-        qry = db.insert(" insert into event(events,description,date,status) VALUES('" + events + "','"+description+"',curdate(),'pending')")
-        return '''<script>alert('added successfully');window.location="/teacher_homepage"</script>'''
+        else:
+            return render_template('TEACHER/create events.html')
 
     else:
-       return render_template('TEACHER/create events.html')
-
-
+        return redirect('/')
 
 @app.route('/view_event_status')
 def view_event_status():
-    db = Db()
-    qry = db.select("SELECT * FROM event,teacher WHERE event.event_id=teacher.teacher_id")
-    return render_template('TEACHER/view event status.html',data=qry)
+    if session['lg'] == "lin":
+        db = Db()
+        qry = db.select("SELECT * FROM event  WHERE teacher_id='"+str(session['lid'])+"'")
+        return render_template('TEACHER/view event status.html',data=qry)
+    else:
+        return redirect('/')
 
 @app.route('/view_notifications')
 def view_notifications():
-    db = Db()
-    qry = db.select("SELECT * FROM notification")
-    return render_template('TEACHER/view notifications.html',data=qry)
+    if session['lg'] == "lin":
+        db = Db()
+        qry = db.select("SELECT * FROM notification")
+        return render_template('TEACHER/view notifications.html',data=qry)
+    else:
+        return redirect('/')
 
 
 @app.route('/share_idea',methods=['get','post'])
 def share_idea():
-    if request.method=="POST":
-        Idea = request.form['textarea']
-
-        db = Db()
-        qry = db.insert(" insert into ideas(ideas,date) VALUES('" + Idea + "',curdate())")
-        return '''<script>alert('added successfully');window.location="/teacher_homepage"</script>'''
-
+    if session['lg'] == "lin":
+        if request.method=="POST":
+            Idea = request.form['textarea']
+            db = Db()
+            qry1=db.selectOne("select * from ideas WHERE ideas='"+Idea+"' ")
+            if qry1 is not None:
+                return '''<script>alert('Already added ');window.location="/share_idea"</script>'''
+            else:
+                qry = db.insert(" insert into ideas(teacher_id,ideas,date) VALUES('"+str(session['lid'])+"','" + Idea + "',curdate())")
+                return '''<script>alert('added successfully');window.location="/teacher_homepage"</script>'''
+        else:
+            return render_template('TEACHER/share ideas.html')
     else:
-       return render_template('TEACHER/share ideas.html')
-
+        return redirect('/')
 
 @app.route('/share_articles',methods=['get','post'])
 def share_articles():
-    if request.method=="POST":
-        articlename = request.form['textarea']
-        article = request.form['textarea']
+    if session['lg'] == "lin":
+        if request.method=="POST":
+            articlename = request.form['textfield']
+            article = request.files['fileField']
+            date = datetime.datetime.now().strftime("%y%m%d-%H%M%S")
+            article.save(r"C:\Users\HP\PycharmProjects\chatbot\static\articles_file\\" + date + '.jpg')
+            path = "/static/articles_file/" + date + '.jpg'
+            db = Db()
+            qry = db.insert(" insert into articles(teacher_id,article_name,articles,date) VALUES('"+str(session['lid'])+"','" + articlename + "','"+str(path)+"',curdate())")
+            return '''<script>alert('added successfully');window.location="/teacher_homepage"</script>'''
+        else:
+            return render_template('TEACHER/share articles.html')
+    else:
+        return redirect('/')
 
+@app.route('/view_rating')
+def view_rating():
+    if session['lg'] == "lin":
         db = Db()
-        qry = db.insert(" insert into ideas(ideas,date) VALUES('" + Idea + "',curdate())")
-        return '''<script>alert('added successfully');window.location="/teacher_homepage"</script>'''
+        qry = db.select("SELECT * FROM rating,student WHERE rating.student_id=student.student_id")
+        return render_template('TEACHER/view rating.html',data=qry)
+    else:
+        return redirect('/')
+
+@app.route('/view_group')
+def view_group():
+    if session['lg'] == "lin":
+        db = Db()
+        qry = db.select("SELECT * FROM groups WHERE teacher_id='"+str(session['lid'])+"'")
+        qry1=db.select("select * from group_members ")
+        return render_template('TEACHER/view group.html',data=qry,data1=qry1)
+    else:
+        return redirect('/')
+
+@app.route('/delete_group/<gid>')
+def delete_group(gid):
+    if session['lg'] == "lin":
+        db=Db()
+        db.delete("delete from groups where group_id='"+gid+"'")
+        db.delete("delete from group_members where group_id='"+gid+"'")
+        return '''<script>alert('deleted');window.location="/view_group"</script>'''
+    else:
+        return redirect('/')
+
+@app.route('/view_group_members/<gid>')
+def view_group_members(gid):
+    if session['lg'] == "lin":
+        db = Db()
+        qry = db.select("SELECT * FROM group_members,student WHERE group_members.student_id=student.student_id and group_members.group_id='"+gid+"'")
+        return render_template('TEACHER/view group members.html',data=qry)
+    else:
+        return redirect('/')
+
+@app.route('/delete_group_member/<gmid>')
+def delete_group_member(gmid):
+    if session['lg'] == "lin":
+        db=Db()
+        db.delete("delete from group_members where group_member_id='"+gmid+"'")
+        return '''<script>alert('deleted');window.location="/view_group_member"</script>'''
+    else:
+        return redirect('/')
+
+# @app.route('/adminhomepage')
+# def adminhomepage():
+#
+#     return render_template('ADMIN/adminhome.html')
+
+@app.route('/logout')
+def logout():
+    session.clear()
+    session['lg']=""
+    return redirect('/')
+
+# ------------------------------------------------------------------------------------------------------------------------------------------------
+#                                                    STUDENT MODULE ---ANDROID
+# -----------------------------------------------------------------------------------------------------------------------------------------------------
+
+@app.route('/and_login',methods=['post'])
+def and_login():
+    username=request.form['u']
+    password=request.form['p']
+    db=Db()
+    qry = db.selectOne("select * from login where username='" + username + "' and password='" + password + "'")
+    res={}
+    if qry :
+        res['status']="ok"
+        res['type']=qry['user_type']
+        res['lid']=qry['login_id']
+        return demjson.encode(res)
 
     else:
-       return render_template('TEACHER/share ideas.html')
+        res['status']="none"
+        return demjson.encode(res)
+
+
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host="0.0.0.0")

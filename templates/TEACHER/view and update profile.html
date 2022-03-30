@@ -1,86 +1,192 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
-</head>
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>view&update profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<body>
-<form action="" method="post" enctype="multipart/form-data"><table width="385" border="1">
-  <tr>
-    <th width="119" scope="row">teacher_name</th>
-    <td width="254"><label for="textfield"></label>
-      <input type="text" name="textfield" id="textfield" /></td>
-  </tr>
-  <tr>
-    <th scope="row">place</th>
-    <td><label for="textfield2"></label>
-      <input type="text" name="textfield2" id="textfield2" /></td>
-  </tr>
-  <tr>
-    <th scope="row">post</th>
-    <td><label for="textfield3"></label>
-      <input type="text" name="textfield3" id="textfield3" /></td>
-  </tr>
-  <tr>
-    <th scope="row">pin</th>
-    <td><label for="textfield4"></label>
-      <input type="text" name="textfield4" id="textfield4" /></td>
-  </tr>
-  <tr>
-    <th scope="row">photo</th>
-    <td><label for="fileField"></label>
-      <input type="file" name="fileField" id="fileField" /></td>
-  </tr>
-  <tr>
-    <th scope="row">gender</th>
-    <td><p>
-      <label>
-        <input type="radio" name="RadioGroup1" value="male" id="RadioGroup1_0" />
-        male</label>
-      <br />
-      <label>
-        <input type="radio" name="RadioGroup1" value="female" id="RadioGroup1_1" />
-        female</label>
-      <br />
-      <label>
-        <input type="radio" name="RadioGroup1" value="others" id="RadioGroup1_2" />
-        others</label>
-      <br />
-    </p></td>
-  </tr>
-  <tr>
-    <th scope="row">qualification</th>
-    <td><label for="textfield7"></label>
-      <input type="text" name="textfield7" id="textfield7" /></td>
-  </tr>
-  <tr>
-    <th scope="row">phoneno</th>
-    <td><label for="textfield8"></label>
-      <input type="text" name="textfield8" id="textfield8" /></td>
-  </tr>
-  <tr>
-    <th scope="row">email</th>
-    <td><label for="textfield9"></label>
-      <input type="text" name="textfield9" id="textfield9" /></td>
-  </tr>
-  <tr>
-    <th scope="row">password</th>
-    <td><label for="textfield10"></label>
-      <input type="text" name="textfield10" id="textfield10" /></td>
-  </tr>
-  <tr>
-    <th scope="row">confirm password</th>
-    <td><label for="textfield11"></label>
-      <input type="text" name="textfield11" id="textfield11" /></td>
-  </tr>
-  
-  <tr>
-    <th colspan="2" scope="row"><input type="submit" name="button" id="button" value="update" /></th>
-    </tr>
-    
-</table>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
-</form>
-</body>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="static/teacher_approve/css/style.css">
+
+	</head>
+	<body>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">PROFILE</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="table-wrap">
+                        <form action="" method="post" enctype="multipart/form-data">
+						<table class="table">
+					    <thead class="thead-primary">
+                            <tr>
+                <th width="119" scope="row">Name</th>
+                <td width="254"><label for="textfield"></label>
+                  <input type="text" name="textfield" id="textfield"  value="{{ data['teacher_name'] }}" required /></td>
+              </tr>
+              <tr>
+                <th scope="row">Place</th>
+                <td><label for="textfield2"></label>
+                  <input type="text" name="textfield2" id="textfield2" value="{{ data['place'] }}" required/></td>
+              </tr>
+              <tr>
+                <th scope="row">Post</th>
+                <td><label for="textfield3"></label>
+                  <input type="text" name="textfield3" id="textfield3" value="{{ data['post'] }}" required /></td>
+              </tr>
+              <tr>
+                <th scope="row">Pin</th>
+                <td><label for="textfield4"></label>
+                  <input type="text" name="textfield4" id="textfield4" value="{{ data['pin'] }}" required maxlength="6"/></td>
+              </tr>
+              <tr>
+                <th scope="row">Photo</th>
+                <td>  <label for="fileField" ></label>
+<img src="{{ data['photo'] }}" alt="" height="100" width="100"/>
+                  <input type="file" name="fileField" id="fileField"  ></td>
+              </tr>
+              <tr>
+                <th scope="row">Gender</th>
+                <td><p>
+                  <label>
+                    <input type="radio" name="RadioGroup1"  value="male" id="RadioGroup1_0"  {% if data['gender']=='male' %}checked {% endif %} />
+                    male</label>
+                  <br />
+                  <label>
+                    <input type="radio" name="RadioGroup1" value="female" id="RadioGroup1_1" {% if data['gender']=='female' %}checked {% endif %}/>
+                    female</label>
+                  <br />
+                  <label>
+                    <input type="radio" name="RadioGroup1" value="others" id="RadioGroup1_2"{% if data['gender']=='others' %}checked {% endif %} />
+                    others</label>
+                  <br />
+                </p></td>
+              </tr>
+              <tr>
+                <th scope="row">Qualification</th>
+                <td><label for="textfield7"></label>
+                  <input type="text" name="textfield7" id="textfield7" value="{{ data['qualification'] }}" required/></td>
+              </tr>
+              <tr>
+                <th scope="row">Phoneno</th>
+                <td><label for="textfield8"></label>
+                  <input type="text" name="textfield8" id="textfield8" value="{{ data['phoneno'] }}" required maxlength="10"/></td>
+              </tr>
+              <tr>
+                <th scope="row">Email</th>
+                <td><label for="textfield9"></label>
+                  <input type="email" name="textfield9" id="textfield9" value="{{ data['email'] }}" readonly/></td>
+              </tr>
+
+              <tr>
+                <th colspan="2" scope="row"><input type="submit" name="button" id="button" value="UPDATE" required /></th>
+                </tr>
+
+                     </table>
+                        </form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="static/teacher_approve/js/jquery.min.js"></script>
+  <script src="static/teacher_approve/js/popper.js"></script>
+  <script src="static/teacher_approve/js/bootstrap.min.js"></script>
+  <script src="static/teacher_approve/js/main.js"></script>
+
+	</body>
 </html>
+
+
+
+
+
+
+{#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">#}
+{#<html xmlns="http://www.w3.org/1999/xhtml">#}
+{#<head>#}
+{#<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />#}
+{#<title>Untitled Document</title>#}
+{#</head>#}
+{##}
+{#<body>#}
+{#<form action="" method="post" enctype="multipart/form-data">#}
+{#    <table width="385" border="1">#}
+{#  <tr>#}
+{#    <th width="119" scope="row">teacher_name</th>#}
+{#    <td width="254"><label for="textfield"></label>#}
+{#      <input type="text" name="textfield" id="textfield"  value="{{ data['teacher_name'] }}" required /></td>#}
+{#  </tr>#}
+{#  <tr>#}
+{#    <th scope="row">place</th>#}
+{#    <td><label for="textfield2"></label>#}
+{#      <input type="text" name="textfield2" id="textfield2" value="{{ data['place'] }}" required/></td>#}
+{#  </tr>#}
+{#  <tr>#}
+{#    <th scope="row">post</th>#}
+{#    <td><label for="textfield3"></label>#}
+{#      <input type="text" name="textfield3" id="textfield3" value="{{ data['post'] }}" required/></td>#}
+{#  </tr>#}
+{#  <tr>#}
+{#    <th scope="row">pin</th>#}
+{#    <td><label for="textfield4"></label>#}
+{#      <input type="text" name="textfield4" id="textfield4" value="{{ data['pin'] }}" required maxlength="6"/></td>#}
+{#  </tr>#}
+{#  <tr>#}
+{#    <th scope="row">photo</th>#}
+{#    <td> <img src="{{ data['photo'] }}" alt="" height="100" width="100"/> <label for="fileField" ></label>#}
+{##}
+{#      <input type="file" name="fileField" id="fileField" required ></td>#}
+{#  </tr>#}
+{#  <tr>#}
+{#    <th scope="row">gender</th>#}
+{#    <td><p>#}
+{#      <label>#}
+{#        <input type="radio" name="RadioGroup1"  value="male" id="RadioGroup1_0"  {% if data['gender']=='male' %}checked {% endif %} />#}
+{#        male</label>#}
+{#      <br />#}
+{#      <label>#}
+{#        <input type="radio" name="RadioGroup1" value="female" id="RadioGroup1_1" {% if data['gender']=='female' %}checked {% endif %}/>#}
+{#        female</label>#}
+{#      <br />#}
+{#      <label>#}
+{#        <input type="radio" name="RadioGroup1" value="others" id="RadioGroup1_2"{% if data['gender']=='others' %}checked {% endif %} />#}
+{#        others</label>#}
+{#      <br />#}
+{#    </p></td>#}
+{#  </tr>#}
+{#  <tr>#}
+{#    <th scope="row">qualification</th>#}
+{#    <td><label for="textfield7"></label>#}
+{#      <input type="text" name="textfield7" id="textfield7" value="{{ data['qualification'] }}" required/></td>#}
+{#  </tr>#}
+{#  <tr>#}
+{#    <th scope="row">phoneno</th>#}
+{#    <td><label for="textfield8"></label>#}
+{#      <input type="text" name="textfield8" id="textfield8" value="{{ data['phoneno'] }}" required maxlength="10"/></td>#}
+{#  </tr>#}
+{#  <tr>#}
+{#    <th scope="row">email</th>#}
+{#    <td><label for="textfield9"></label>#}
+{#      <input type="email" name="textfield9" id="textfield9" value="{{ data['email'] }}" readonly/></td>#}
+{#  </tr>#}
+{##}
+{#  #}
+{#  <tr>#}
+{#    <th colspan="2" scope="row"><input type="submit" name="button" id="button" value="update" required /></th>#}
+{#    </tr>#}
+{#    #}
+{#</table>#}
+{##}
+{#</form>#}
+{#</body>#}
+{#</html>#}

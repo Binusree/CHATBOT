@@ -35,7 +35,7 @@
       <td>&nbsp;{{ i.qualification }}</td>
       <td>{{ i.phoneno }}</td>
       <td>{{ i.email }}</td>
-      <td><a href="/block_teacher/{{ i.teacher_id }}">block</a> <br />
+      <td><a href="/block_teacher/{{ i.teacher_id }}" onclick="return confirm('Are You Sure To Block {{ i.teacher_name }}?')">block</a> <br />
 
       
     </tr>

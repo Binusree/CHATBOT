@@ -1,39 +1,104 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
-</head>
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Table 03</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<body>
-<form action="" method="get">
-  <table width="200" border="1">
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">event_name</th>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
-      <th scope="col">description</th>
-      <th scope="col">date</th>
-      <th scope="col">status</th>
-      
-    </tr>
-      {% for i in data %}
-    <tr>
-      <td>{{ loop.index  }}</td>
-      <td>{{ i.events }}&nbsp;</td>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-      <td>{{ i.description }}</td>
-      <td>&nbsp;{{ i.date }}</td>
+	<link rel="stylesheet" href="static/teacher_approve/css/style.css">
 
-        {% if i ['status']=='pending' %}
-      <td><a href="/approve_events/{{ i.event_id }}">approve</a>
-      <a href="/reject_events/{{ i.event_id }}">reject</a></td>
-       {% else %}
-       <td>{{ i.status }}</td>
-    {% endif %}
-    </tr>
-      {% endfor%}
-  </table>
-</form>
-</body>
+	</head>
+  <body>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">View Events and Approve</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="table-wrap">
+						<table class="table">
+					    <thead class="thead-primary">
+					      <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">event_name</th>
+
+                          <th scope="col">description</th>
+                          <th scope="col">date</th>
+                          <th scope="col">status</th>
+
+                        </tr>
+					    </thead>
+					    <tbody>
+					     {% for i in data %}
+                        <tr>
+                          <td>{{ loop.index  }}</td>
+                          <td>{{ i.events }}&nbsp;</td>
+
+                          <td>{{ i.description }}</td>
+                          <td>&nbsp;{{ i.date }}</td>
+
+                            {% if i ['status']=='pending' %}
+                          <td><a href="/approve_events/{{ i.event_id }}">approve</a>
+                          <a href="/reject_events/{{ i.event_id }}">reject</a></td>
+                           {% else %}
+                           <td>{{ i.status }}</td>
+                        {% endif %}
+                        </tr>
+                          {% endfor%}
+					    </tbody>
+					  </table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="static/teacher_approve/js/jquery.min.js"></script>
+  <script src="static/teacher_approve/js/popper.js"></script>
+  <script src="static/teacher_approve/js/bootstrap.min.js"></script>
+  <script src="static/teacher_approve/js/main.js"></script>
+
+	</body>
 </html>
+
+
+{#<body>#}
+{#<form action="" method="get">#}
+{#  <table width="200" border="1">#}
+{#    <tr>#}
+{#      <th scope="col">#</th>#}
+{#      <th scope="col">event_name</th>#}
+{##}
+{#      <th scope="col">description</th>#}
+{#      <th scope="col">date</th>#}
+{#      <th scope="col">status</th>#}
+{#      #}
+{#    </tr>#}
+{#      {% for i in data %}#}
+{#    <tr>#}
+{#      <td>{{ loop.index  }}</td>#}
+{#      <td>{{ i.events }}&nbsp;</td>#}
+{##}
+{#      <td>{{ i.description }}</td>#}
+{#      <td>&nbsp;{{ i.date }}</td>#}
+{##}
+{#        {% if i ['status']=='pending' %}#}
+{#      <td><a href="/approve_events/{{ i.event_id }}">approve</a>#}
+{#      <a href="/reject_events/{{ i.event_id }}">reject</a></td>#}
+{#       {% else %}#}
+{#       <td>{{ i.status }}</td>#}
+{#    {% endif %}#}
+{#    </tr>#}
+{#      {% endfor%}#}
+{#  </table>#}
+{#</form>#}
+{#</body>#}
+{#</html>#}
