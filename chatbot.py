@@ -186,8 +186,8 @@ def teacher_sign():
         pin = request.form['pin']
         photo= request.files['fileField']
         date=datetime.datetime.now().strftime("%y%m%d-%H%M%S")
-        # photo.save(r"C:\Users\HP\PycharmProjects\chatbot\static\teacher_photo\\"+date+'.jpg')
-        photo.save(r"C:\Users\IDZ\Downloads\chatbot\static\teacher_photo\\"+date+'.jpg')
+        photo.save(r"C:\Users\HP\PycharmProjects\chatbot\chatbot\static\teacher_photo\\"+date+'.jpg')
+        #photo.save(r"C:\Users\IDZ\Downloads\chatbot\static\teacher_photo\\"+date+'.jpg')
         path="/static/teacher_photo/"+date+'.jpg'
         gender = request.form['RadioGroup1']
         qualification = request.form['qualification']
@@ -438,6 +438,182 @@ def and_login():
         res['status']="none"
         return demjson.encode(res)
 
+
+@app.route('/and_viewprofile',methods=['post'])
+def and_viewprofile():
+    id=request.form['id']
+    db=Db()
+    qry=db.selectOne("select * from student where student_id='"+id+"'")
+    res = {}
+    if qry:
+        res['status'] = "ok"
+        res['data']=qry
+        return demjson.encode(res)
+    else:
+        res['status']="none"
+        return demjson.encode(res)
+
+
+@app.route('/and_approvedevents',methods=['post'])
+def and_approvedevents():
+    db=Db()
+    qry=db.select("select * from event,teacher where event.teacher_id=teacher.teacher_id and event.status='approved'")
+    res = {}
+    if qry:
+        res['status'] = "ok"
+        res['data']=qry
+        return demjson.encode(res)
+    else:
+        res['status']="none"
+        return demjson.encode(res)
+
+
+@app.route('/and_viewarticles',methods=['post'])
+def and_viewarticles():
+    db=Db()
+    qry=db.select("select * from articles,teacher where teacher.teacher_id=articles.teacher_id ")
+    res = {}
+    if qry:
+        res['status'] = "ok"
+        res['data']=qry
+        return demjson.encode(res)
+    else:
+        res['status']="none"
+        return demjson.encode(res)
+
+
+
+@app.route('/and_viewideas',methods=['post'])
+def and_viewideas():
+    db=Db()
+    qry=db.select("select * from ideas,teacher where teacher.teacher_id=ideas.teacher_id ")
+    res = {}
+    if qry:
+        res['status'] = "ok"
+        res['data']=qry
+        return demjson.encode(res)
+    else:
+        res['status']="none"
+        return demjson.encode(res)
+
+@app.route('/and_viewnotifications',methods=['post'])
+def and_viewnotifications():
+    db=Db()
+    qry=db.select("select * from notification")
+    res = {}
+    if qry:
+        res['status'] = "ok"
+        res['data']=qry
+        return demjson.encode(res)
+    else:
+        res['status']="none"
+        return demjson.encode(res)
+
+
+@app.route('/and_viewgroup',methods=['post'])
+def and_viewgroup():
+    id = request.form['id']
+    db = Db()
+    qry = db.select("SELECT * FROM groups,teacher,group_members WHERE groups.teacher_id=teacher.teacher_id AND groups.group_id=group_members.group_id AND group_members.student_id='"+id+"'")
+    res = {}
+    if qry:
+        res['status'] = "ok"
+        res['data'] = qry
+        return demjson.encode(res)
+    else:
+        res['status'] = "none"
+        return demjson.encode(res)
+
+@app.route('/and_view_groupmembers',methods=['post'])
+def and_viewgroupmembers():
+    gid = request.form['gid']
+    db = Db()
+    qry = db.select("select * from group_members,student where group_members.student_id=student.student_id and group_id='"+gid+"'")
+    res = {}
+    if qry:
+        res['status'] = "ok"
+        res['data'] = qry
+        return demjson.encode(res)
+    else:
+        res['status'] = "none"
+        return demjson.encode(res)
+
+@app.route('/and_sendfeedback',methods=['post'])
+def and_sendfeedback():
+    id = request.form['id']
+    f = request.form['fed']
+    db = Db()
+    qry = db.insert("insert into feedback(student_id,feedbacks,date) VALUES ('"+id+"','"+f+"',curdate())")
+    res = {}
+    if qry:
+        res['status'] = "ok"
+        return demjson.encode(res)
+    else:
+        res['status'] = "none"
+        return demjson.encode(res)
+
+
+
+@app.route('/and_signup',methods=['post'])
+def and_signup():
+    db=Db()
+    name = request.form['na']
+    place = request.form['pl']
+    post = request.form['post']
+    pin = request.form['pin']
+    photo = request.files['pic']
+    date = datetime.datetime.now().strftime("%y%m%d-%H%M%S")
+    # photo.save(r"C:\Users\HP\PycharmProjects\chatbot\static\teacher_photo\\"+date+'.jpg')
+    photo.save(r"C:\Users\HP\PycharmProjects\chatbot\chatbot\static\student_photo\\" + date + '.jpg')
+    path = "/static/student_photo/" + date + '.jpg'
+    gender = request.form['g']
+    course = request.form['c']
+    phoneno = request.form['ph']
+    email = request.form['e']
+    password = request.form['p']
+
+    qry = db.insert("insert into login(username,password,user_type) VALUES('" + email + "','" + password + "','student')")
+    qry1= db.insert("insert into student VALUES('" + str(qry) + "','" + name + "','" + place + "','" + post + "','" + pin + "','" + str(path) + "','" + gender + "','" + course + "','" + phoneno + "','" + email + "')")
+
+    res = {}
+    if qry:
+        res['status'] = "ok"
+        return demjson.encode(res)
+    else:
+        res['status'] = "none"
+        return demjson.encode(res)
+
+
+
+@app.route('/and_rate_articles',methods=['post'])
+def and_rate_articles():
+    id = request.form['id']
+    r = request.form['rate']
+    a = request.form['aid']
+    db = Db()
+    qry = db.insert("insert into rating_article(student_id,ratings,date,article_id) VALUES ('"+id+"','"+r+"',curdate(),'"+a+"')")
+    res = {}
+    if qry:
+        res['status'] = "ok"
+        return demjson.encode(res)
+    else:
+        res['status'] = "none"
+        return demjson.encode(res)
+
+@app.route('/and_rate_ideas',methods=['post'])
+def and_rate_ideas():
+    id = request.form['id']
+    r = request.form['rate']
+    a = request.form['iid']
+    db = Db()
+    qry = db.insert("insert into rating_ideas(student_id,ratings,date,idea_id) VALUES ('"+id+"','"+r+"',curdate(),'"+a+"')")
+    res = {}
+    if qry:
+        res['status'] = "ok"
+        return demjson.encode(res)
+    else:
+        res['status'] = "none"
+        return demjson.encode(res)
 
 
 if __name__ == '__main__':
