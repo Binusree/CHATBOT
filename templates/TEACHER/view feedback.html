@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Table 03</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="static/teacher_approve/css/style.css">
+
+	</head>
+	<body>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Registered Teachers</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="table-wrap">
+						<table class="table">
+					    <thead class="thead-primary">
+					     <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Student name</th>
+                              <th scope="col">Feedback</th>
+
+
+                            </tr>
+					    </thead>
+					    <tbody>
+					      {% for i in data %}
+                  <tr>
+      <td>{{ loop.index }}</td>
+      <td>{{ i.student_name }}&nbsp;</td>
+      <td>&nbsp;{{ i.feedbacks }}<br>
+
+
+    </tr>
+      {% endfor %}
+	    </tbody>
+					  </table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="static/teacher_approve/js/jquery.min.js"></script>
+  <script src="static/teacher_approve/js/popper.js"></script>
+  <script src="static/teacher_approve/js/bootstrap.min.js"></script>
+  <script src="static/teacher_approve/js/main.js"></script>
+
+	</body>
+</html>
+
+
+
+{#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">#}
+{#<html xmlns="http://www.w3.org/1999/xhtml">#}
+{#<head>#}
+{#<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />#}
+{#<title>Untitled Document</title>#}
+{#</head>#}
+{##}
+{#<body>#}
+{#<form action="" method="get">#}
+{#  <table width="200" border="1">#}
+{#    <caption>#}
+{#      view registered teacher#}
+{#    </caption>#}
+{#    <tr>#}
+{#      <th scope="col">#</th>#}
+{#      <th scope="col">teacher_name</th>#}
+{#      <th scope="col">address</th>#}
+{#      <th scope="col">photo</th>#}
+{#      <th scope="col">phoneno</th>#}
+{#      <th scope="col">gender</th>#}
+{#      <th scope="col">qualification</th>#}
+{#      <th scope="col">email</th>#}
+{#      <th scope="col">&nbsp;</th>#}
+{#      #}
+{#    </tr>#}
+{#      {% for i in data %}#}
+{#    <tr>#}
+{#      <td>{{ loop.index }}</td>#}
+{#      <td>{{ i.teacher_name }}&nbsp;</td>#}
+{#      <td>&nbsp;{{ i.place }}<br>#}
+{#      {{ i.post }}<br>#}
+{#      {{ i.pin }}</td>#}
+{#      <td>{{ i.photo }}</td>#}
+{#      <td>&nbsp;{{ i.gender }}</td>#}
+{#      <td>&nbsp;{{ i.qualification }}</td>#}
+{#      <td>{{ i.phoneno }}&nbsp;</td>#}
+{#      <td>{{ i.email }}</td>#}
+{#      <td><a href="/approve_teacher/{{ i.teacher_id }}">approve</a> <br />#}
+{#      <a href="/reject_teacher/{{ i.teacher_id }}">reject</a></td>#}
+{#      #}
+{#    </tr>#}
+{#      {% endfor %}#}
+{#  </table>#}
+{#</form>#}
+{#</body>#}
+{#</html>#}

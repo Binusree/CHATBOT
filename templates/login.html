@@ -1,27 +1,60 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
 
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="static/teach_sign/fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="static/teach_sign/css/style.css">
+</head>
 <body>
-<form action="" method="post">
-  <table width="200" border="1">
-    <tr>
-      <th scope="row">username</th>
-      <td><label for="textfield2"></label>
-      <input type="text" name="textfield" id="textfield2" /></td>
-    </tr>
-    <tr>
-      <th scope="row">password</th>
-      <td><label for="textfield3"></label>
-      <input type="text" name="textfield2" id="textfield3" /></td>
-    </tr>
-    <tr>
-      <th colspan="2" scope="row"><input type="submit" name="button" id="button" value="login" /></th>
-    </tr>
-  </table>
-</form>
-</body>
+
+    <div class="main">
+
+
+        <!-- Sing in  Form -->
+        <section class="sign-in">
+            <div class="container">
+                <div class="signin-content">
+                    <div class="signin-image">
+                        <figure><img src="static/teach_sign/images/signin-image.jpg" alt="sing up image"></figure>
+                    </div>
+
+                    <div class="signin-form">
+                        <h2 class="form-title">Sign up</h2>
+                        <form method="POST" class="register-form" id="login-form">
+                            <div class="form-group">
+                                <label for="your_name"><i class="zmdi zmdi zmdi-email"></i></label>
+                                <input type="text" name="name" id="your_name" placeholder="email"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="pass" id="your_pass" placeholder="Password"/>
+                            </div>
+                            <div class="form-group">
+                                <a href="/teacher_sign" class="txt1">
+                                    Teacher signup?
+                                </a>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JS -->
+    <script src="static/teach_sign/vendor/jquery/jquery.min.js"></script>
+    <script src="static/teach_sign/js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>

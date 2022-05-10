@@ -1,0 +1,12 @@
+.rad{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90px;
+}
+.rdB{
+    width: 20px;
+}
+.con{
+    padding-top: 110px;
+}

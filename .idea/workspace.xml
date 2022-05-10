@@ -1,7 +1,276 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4490d15d-ad1e-4fca-a988-ef8183feed3d" name="Default" comment="" />
+    <list default="true" id="4490d15d-ad1e-4fca-a988-ef8183feed3d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/img/apple-touch-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/img/clients/client-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/img/clients/client-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/img/clients/client-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/img/clients/client-4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/img/clients/client-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/img/clients/client-6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/img/cta-bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/img/favicon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/img/hero-img.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/img/portfolio/portfolio-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/img/portfolio/portfolio-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/img/portfolio/portfolio-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/img/portfolio/portfolio-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/img/portfolio/portfolio-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/img/portfolio/portfolio-6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/img/portfolio/portfolio-7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/img/portfolio/portfolio-8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/img/portfolio/portfolio-9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/img/portfolio/portfolio-details-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/img/portfolio/portfolio-details-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/img/portfolio/portfolio-details-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/img/skills.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/img/team/team-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/img/team/team-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/img/team/team-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/img/team/team-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/img/why-us.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap-icons/fonts/bootstrap-icons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/boxicons/fonts/boxicons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/boxicons/fonts/boxicons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/boxicons/fonts/boxicons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/boxicons/fonts/boxicons.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/remixicon/remixicon.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/remixicon/remixicon.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/remixicon/remixicon.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/remixicon/remixicon.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/material-icon/fonts/Material-Design-Iconic-Font.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/material-icon/fonts/Material-Design-Iconic-Font.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/material-icon/fonts/Material-Design-Iconic-Font.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/material-icon/fonts/Material-Design-Iconic-Font.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-300.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-300.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-300.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-300.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-300italic.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-300italic.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-300italic.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-300italic.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-500.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-500.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-500.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-500.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-500italic.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-500italic.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-500italic.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-500italic.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-600.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-600.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-600.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-600.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-700.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-700.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-700.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-700.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-700italic.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-700italic.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-700italic.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-700italic.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-800.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-800.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-800.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-800.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-800italic.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-800italic.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-800italic.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-800italic.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-900.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-900.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-900.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-900.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-italic.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-italic.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-italic.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-italic.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/roboto-condensed-v16-latin-700.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/roboto-condensed-v16-latin-700.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/roboto-condensed-v16-latin-700.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/roboto-condensed-v16-latin-700.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/roboto-condensed-v16-latin-700italic.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/roboto-condensed-v16-latin-700italic.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/roboto-condensed-v16-latin-700italic.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/roboto-condensed-v16-latin-700italic.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/roboto-condensed-v16-latin-italic.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/roboto-condensed-v16-latin-italic.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/roboto-condensed-v16-latin-italic.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/roboto-condensed-v16-latin-italic.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/roboto-condensed-v16-latin-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/roboto-condensed-v16-latin-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/roboto-condensed-v16-latin-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/roboto-condensed-v16-latin-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/images/signin-image.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/images/signup-image.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/fonts/themefisher-font.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/fonts/themefisher-font.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/fonts/themefisher-font.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/img/author.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/img/author.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/img/banner.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/img/phantom.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/img/tm-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/img/tm.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/img/works/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/img/works/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/img/works/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/img/works/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/img/works/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/aos/aos.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/aos/aos.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap-icons/bootstrap-icons.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap-icons/bootstrap-icons.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap-icons/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap-grid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap-grid.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap-grid.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap-grid.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap-grid.rtl.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap-grid.rtl.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap-grid.rtl.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap-grid.rtl.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap-reboot.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap-reboot.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap-reboot.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap-reboot.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap-reboot.rtl.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap-reboot.rtl.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap-utilities.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap-utilities.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap-utilities.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap-utilities.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap-utilities.rtl.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap-utilities.rtl.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap.rtl.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap.rtl.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap.rtl.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/css/bootstrap.rtl.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/js/bootstrap.bundle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/js/bootstrap.bundle.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/js/bootstrap.bundle.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/js/bootstrap.bundle.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/js/bootstrap.esm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/js/bootstrap.esm.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/js/bootstrap.esm.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/js/bootstrap.esm.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/js/bootstrap.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/bootstrap/js/bootstrap.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/boxicons/css/animations.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/boxicons/css/boxicons.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/boxicons/css/boxicons.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/boxicons/css/transformations.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/boxicons/fonts/boxicons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/glightbox/css/glightbox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/glightbox/css/glightbox.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/glightbox/js/glightbox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/glightbox/js/glightbox.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/isotope-layout/isotope.pkgd.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/isotope-layout/isotope.pkgd.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/php-email-form/validate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/remixicon/remixicon.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/remixicon/remixicon.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/remixicon/remixicon.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/remixicon/remixicon.symbol.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/swiper/swiper-bundle.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/swiper/swiper-bundle.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/home_design/vendor/waypoints/noframework.waypoints.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/css/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/css/style.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/material-icon/css/material-design-iconic-font.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/material-icon/css/material-design-iconic-font.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/material-icon/fonts/Material-Design-Iconic-Font.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-300.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-300italic.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-500.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-500italic.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-600.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-700.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-700italic.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-800.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-800italic.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-900.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-italic.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/poppins-v5-latin-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/roboto-condensed-v16-latin-700.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/roboto-condensed-v16-latin-700italic.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/roboto-condensed-v16-latin-italic.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/fonts/poppins/roboto-condensed-v16-latin-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/scss/common/extend.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/scss/common/fonts.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/scss/common/global.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/scss/common/minxi.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/scss/common/variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/scss/layouts/main.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/scss/layouts/responsive.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/scss/style.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/vendor/jquery/jquery-ui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teach_sign/vendor/jquery/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/css/animate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/css/colors/blue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/css/colors/green.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/css/colors/red.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/css/colors/yellow.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/css/owl.carousel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/css/owl.carousel.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/css/themefisher-fonts.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/fonts/themefisher-font.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/img/hexa-02.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/js/form.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/js/isotope.pkgd.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/js/jquery-validation.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/js/jquery.easing.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/js/jquery.nicescroll.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/js/owl.carousel.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/js/vendor/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/js/vendor/jquery-2.2.4.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/scss/colors/blue.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/scss/colors/green.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/scss/colors/red.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/scss/colors/yellow.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/scss/main.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/scss/parts/_about.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/scss/parts/_base.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/scss/parts/_flex.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/scss/parts/_home.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/scss/parts/_media-queries.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/scss/parts/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/scss/parts/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/teacher_home/scss/parts/_welcome.scss" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sql.sql" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/chatbot.iml" afterPath="$PROJECT_DIR$/.idea/chatbot.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chatbot.py" afterPath="$PROJECT_DIR$/chatbot.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/ADMIN/view feedback.html" afterPath="$PROJECT_DIR$/templates/ADMIN/view feedback.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/TEACHER/share articles.html" afterPath="$PROJECT_DIR$/templates/TEACHER/share articles.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/TEACHER/teacher_homeindex.html" afterPath="$PROJECT_DIR$/templates/TEACHER/teacher_homeindex.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/login.html" afterPath="$PROJECT_DIR$/templates/login.html" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,121 +279,92 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/chatbot$chatbot.coverage" NAME="chatbot Coverage Results" MODIFIED="1648176143920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/chatbot$chatbot.coverage" NAME="chatbot Coverage Results" MODIFIED="1652176124927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="share ideas.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/TEACHER/share ideas.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="59" lean-forward="false" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="share articles.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/TEACHER/share articles.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="62" lean-forward="false" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
-              <folding>
-                <marker date="1648118267815" expanded="true" signature="2963:2970" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create events.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/TEACHER/create events.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="30" column="37" lean-forward="false" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add group.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/TEACHER/add group.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="19" column="65" lean-forward="false" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chatbot.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="chatbot.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chatbot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="422" column="0" lean-forward="true" selection-start-line="422" selection-start-column="0" selection-end-line="422" selection-end-column="0" />
+            <state relative-caret-position="-8001">
+              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
-                <marker date="1648176353206" expanded="true" signature="377:454" ph="select * fro... login" />
-                <marker date="1648176353206" expanded="true" signature="1490:1587" ph="SELECT * FRO... login" />
-                <marker date="1648176353206" expanded="true" signature="1825:1890" ph="update login... " />
-                <marker date="1648176353206" expanded="true" signature="2159:2224" ph="update login... " />
-                <marker date="1648176353206" expanded="true" signature="2505:2602" ph="SELECT * FRO... login" />
-                <marker date="1648176353206" expanded="true" signature="2862:2959" ph="SELECT * FRO... login" />
-                <marker date="1648176353206" expanded="true" signature="3204:3265" ph="update login... " />
-                <marker date="1648176353206" expanded="true" signature="3536:3578" ph="delete from " />
-                <marker date="1648176353206" expanded="true" signature="3600:3646" ph="delete from " />
-                <marker date="1648176353206" expanded="true" signature="3929:3996" ph="SELECT * FRO... event" />
-                <marker date="1648176353206" expanded="true" signature="4245:4304" ph="update event... " />
-                <marker date="1648176353206" expanded="true" signature="4568:4614" ph="delete from " />
-                <marker date="1648176353206" expanded="true" signature="4877:4974" ph="SELECT feedb... feedback" />
-                <marker date="1648176353206" expanded="true" signature="5340:5405" ph="select * fro... notification" />
-                <marker date="1648176353206" expanded="true" signature="5598:5679" ph="insert into notification... " />
-                <marker date="1648176353206" expanded="true" signature="7384:7430" ph="select * fro... login" />
-                <marker date="1648176353206" expanded="true" signature="7658:7765" ph="insert into login... " />
-                <marker date="1648176353206" expanded="true" signature="7799:7967" ph="insert into teacher... " />
-                <marker date="1648176353206" expanded="true" signature="9240:9496" ph="update teach... " />
-                <marker date="1648176353206" expanded="true" signature="9680:9914" ph="update teach... " />
-                <marker date="1648176353206" expanded="true" signature="10090:10360" ph="update teach... " />
-                <marker date="1648176353206" expanded="true" signature="10552:10616" ph="select * fro... teacher" />
-                <marker date="1648176353206" expanded="true" signature="10975:10995" ph="select * fro... grop" />
-                <marker date="1648176353206" expanded="true" signature="10975:11014" ph="select * fro... groups" />
-                <marker date="1648176353206" expanded="true" signature="10975:11025" ph="select * fro... groups" />
-                <marker date="1648176353206" expanded="true" signature="11213:11305" ph="insert into groups... " />
-                <marker date="1648176353206" expanded="true" signature="11831:11873" ph="select * fro... group_members" />
-                <marker date="1648176353206" expanded="true" signature="11831:11875" ph="select * fro... group_members" />
-                <marker date="1648176353206" expanded="true" signature="11831:11889" ph="select * fro... group_members" />
-                <marker date="1648176353206" expanded="true" signature="11831:11906" ph="select * fro... group_members" />
-                <marker date="1648176353206" expanded="true" signature="11831:11922" ph="select * fro... group_members" />
-                <marker date="1648176353206" expanded="true" signature="12118:12206" ph="insert into group_members... " />
-                <marker date="1648176353206" expanded="true" signature="12380:12443" ph="select * fro... groups" />
-                <marker date="1648176353206" expanded="true" signature="12474:12495" ph="select * fro... student" />
-                <marker date="1648176353206" expanded="true" signature="12915:13064" ph="insert into event... " />
-                <marker date="1648176353206" expanded="true" signature="13426:13489" ph="SELECT * FRO... event" />
-                <marker date="1648176353206" expanded="true" signature="13740:13766" ph="SELECT * FRO... notification" />
-                <marker date="1648176353206" expanded="true" signature="14115:14148" ph="select * fro... ideas" />
-                <marker date="1648176353206" expanded="true" signature="14115:14157" ph="select * fro... ideas" />
-                <marker date="1648176353206" expanded="true" signature="14346:14445" ph="insert into ideas... " />
-                <marker date="1648176353206" expanded="true" signature="15202:15343" ph="insert into articles... " />
-                <marker date="1648176353206" expanded="true" signature="15692:15763" ph="SELECT * FRO... rating" />
-                <marker date="1648176353206" expanded="true" signature="15992:16055" ph="SELECT * FRO... groups" />
-                <marker date="1648176353206" expanded="true" signature="16082:16109" ph="select * fro... group_members" />
-                <marker date="1648176353206" expanded="true" signature="16354:16397" ph="delete from " />
-                <marker date="1648176353206" expanded="true" signature="16419:16469" ph="delete from " />
-                <marker date="1648176353206" expanded="true" signature="16740:16862" ph="SELECT * FRO... group_members" />
-                <marker date="1648176353206" expanded="true" signature="17119:17177" ph="delete from " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view notifications.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/TEACHER/view notifications.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="66" lean-forward="false" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
-              <folding>
-                <marker date="1648118267925" expanded="false" signature="2345:2351" ph=" " />
-                <marker date="1648118267925" expanded="false" signature="2393:2399" ph=" " />
+                <marker date="1652156412632" expanded="true" signature="495:572" ph="select * fro... login" />
+                <marker date="1652156412632" expanded="true" signature="1614:1711" ph="SELECT * FRO... login" />
+                <marker date="1652156412632" expanded="true" signature="1949:2014" ph="update login... " />
+                <marker date="1652156412632" expanded="true" signature="2283:2348" ph="update login... " />
+                <marker date="1652156412632" expanded="true" signature="2629:2726" ph="SELECT * FRO... login" />
+                <marker date="1652156412632" expanded="true" signature="2986:3083" ph="SELECT * FRO... login" />
+                <marker date="1652156412632" expanded="true" signature="3328:3389" ph="update login... " />
+                <marker date="1652156412632" expanded="true" signature="3660:3702" ph="delete from " />
+                <marker date="1652156412632" expanded="true" signature="3724:3770" ph="delete from " />
+                <marker date="1652156412632" expanded="true" signature="4053:4120" ph="SELECT * FRO... event" />
+                <marker date="1652156412632" expanded="true" signature="4369:4428" ph="update event... " />
+                <marker date="1652156412632" expanded="true" signature="4692:4738" ph="delete from " />
+                <marker date="1652156412632" expanded="true" signature="5001:5098" ph="SELECT feedb... feedback" />
+                <marker date="1652156412632" expanded="true" signature="5464:5529" ph="select * fro... notification" />
+                <marker date="1652156412632" expanded="true" signature="5722:5803" ph="insert into notification... " />
+                <marker date="1652156412632" expanded="true" signature="7406:7452" ph="select * fro... login" />
+                <marker date="1652156412632" expanded="true" signature="7680:7787" ph="insert into login... " />
+                <marker date="1652156412632" expanded="true" signature="7821:7989" ph="insert into teacher... " />
+                <marker date="1652156412632" expanded="true" signature="9256:9512" ph="update teach... " />
+                <marker date="1652156412632" expanded="true" signature="9696:9930" ph="update teach... " />
+                <marker date="1652156412632" expanded="true" signature="10106:10376" ph="update teach... " />
+                <marker date="1652156412632" expanded="true" signature="10568:10632" ph="select * fro... teacher" />
+                <marker date="1652156412632" expanded="true" signature="10991:11041" ph="select * fro... groups" />
+                <marker date="1652156412632" expanded="true" signature="11229:11321" ph="insert into groups... " />
+                <marker date="1652156412632" expanded="true" signature="11847:11938" ph="select * fro... group_members" />
+                <marker date="1652156412632" expanded="true" signature="12134:12222" ph="insert into group_members... " />
+                <marker date="1652156412632" expanded="true" signature="12396:12459" ph="select * fro... groups" />
+                <marker date="1652156412632" expanded="true" signature="12490:12511" ph="select * fro... student" />
+                <marker date="1652156412632" expanded="true" signature="12931:13080" ph="insert into event... " />
+                <marker date="1652156412632" expanded="true" signature="13442:13505" ph="SELECT * FRO... event" />
+                <marker date="1652156412632" expanded="true" signature="13756:13782" ph="SELECT * FRO... notification" />
+                <marker date="1652156412632" expanded="true" signature="14026:14033" ph="SELECT * FRO... notification" />
+                <marker date="1652156412632" expanded="true" signature="14026:14123" ph="SELECT * FRO... feedback" />
+                <marker date="1652156412632" expanded="true" signature="14469:14511" ph="select * fro... ideas" />
+                <marker date="1652156412632" expanded="true" signature="14700:14799" ph="insert into ideas... " />
+                <marker date="1652156412632" expanded="true" signature="15556:15697" ph="insert into articles... " />
+                <marker date="1652156412632" expanded="true" signature="16046:16117" ph="SELECT * FRO... rating" />
+                <marker date="1652156412632" expanded="true" signature="16346:16409" ph="SELECT * FRO... groups" />
+                <marker date="1652156412632" expanded="true" signature="16436:16463" ph="select * fro... group_members" />
+                <marker date="1652156412632" expanded="true" signature="16708:16751" ph="delete from " />
+                <marker date="1652156412632" expanded="true" signature="16773:16823" ph="delete from " />
+                <marker date="1652156412632" expanded="true" signature="17094:17216" ph="SELECT * FRO... group_members" />
+                <marker date="1652156412632" expanded="true" signature="17473:17531" ph="delete from " />
+                <marker date="1652156412632" expanded="true" signature="18013:18034" ph="select * fro... student" />
+                <marker date="1652156412632" expanded="true" signature="18543:18624" ph="insert into chat... " />
+                <marker date="1652156412632" expanded="true" signature="19140:19179" ph="select * fro... chat" />
+                <marker date="1652156412632" expanded="true" signature="20237:20322" ph="select * fro... login" />
+                <marker date="1652156412632" expanded="true" signature="20691:20738" ph="select * fro... student" />
+                <marker date="1652156412632" expanded="true" signature="21038:21135" ph="select * fro... event" />
+                <marker date="1652156412632" expanded="true" signature="21431:21506" ph="select * fro... articles" />
+                <marker date="1652156412632" expanded="true" signature="21798:21867" ph="select * fro... ideas" />
+                <marker date="1652156412632" expanded="true" signature="22173:22199" ph="select * fro... notification" />
+                <marker date="1652156412632" expanded="true" signature="22521:22687" ph="SELECT * FRO... groups" />
+                <marker date="1652156412632" expanded="true" signature="23029:23137" ph="select * fro... group_members" />
+                <marker date="1652156412632" expanded="true" signature="23496:23579" ph="insert into feedback... " />
+                <marker date="1652156412632" expanded="true" signature="24437:24536" ph="insert into login... " />
+                <marker date="1652156412632" expanded="true" signature="24560:24754" ph="insert into student... " />
+                <marker date="1652156412632" expanded="true" signature="25121:25227" ph="insert into rating_article... " />
+                <marker date="1652156412632" expanded="true" signature="25585:25686" ph="insert into rating_ideas... " />
+                <marker date="1652156412632" expanded="true" signature="26038:26134" ph="insert into chat... " />
+                <marker date="1652156412632" expanded="true" signature="26442:26583" ph="select chat.... chat" />
+                <marker date="1652156412632" expanded="true" signature="27082:27103" ph="select * fro... teacher" />
+                <marker date="1652156412632" expanded="true" signature="27775:27868" ph="insert into chatbotchat... " />
+                <marker date="1652156412632" expanded="true" signature="27916:27938" ph="select * fro... chatboat" />
+                <marker date="1652156412632" expanded="true" signature="28249:28324" ph="insert into chatbotchat... " />
+                <marker date="1652156412632" expanded="true" signature="28249:28348" ph="insert into chatbotchat... " />
+                <marker date="1652156412632" expanded="true" signature="28646:28739" ph="insert into chat... " />
+                <marker date="1652156412632" expanded="true" signature="28783:28805" ph="select * fro... chatboat" />
+                <marker date="1652156412632" expanded="true" signature="29513:29592" ph="insert into chatbotchat... " />
+                <marker date="1652156412632" expanded="true" signature="29513:29616" ph="insert into chatbotchat... " />
+                <marker date="1652156412632" expanded="true" signature="30064:30209" ph="select chat.... chat" />
+                <marker date="1652156412632" expanded="true" signature="30483:30512" ph="delete from " />
+                <marker date="1652156412632" expanded="true" signature="30483:30530" ph="delete from " />
+                <marker date="1652156412632" expanded="true" signature="30548:30593" ph="delete from " />
               </folding>
             </state>
           </provider>
@@ -133,12 +373,59 @@
       <file leaf-file-name="view group.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/TEACHER/view group.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
+            <state relative-caret-position="338">
               <caret line="51" column="24" lean-forward="false" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
-              <folding>
-                <marker date="1648176353777" expanded="false" signature="2593:2599" ph=" " />
-                <marker date="1648176353777" expanded="false" signature="2725:2731" ph=" " />
-              </folding>
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view registerd teacher.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/ADMIN/view registerd teacher.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="14" column="10" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view events &amp; approval.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/ADMIN/view events &amp; approval.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-21">
+              <caret line="29" column="43" lean-forward="false" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view approved teachers.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/ADMIN/view approved teachers.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="39" column="6" lean-forward="true" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view feedback.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/ADMIN/view feedback.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="36" column="31" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="teach_home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/TEACHER/teach_home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="145" column="71" lean-forward="false" selection-start-line="145" selection-start-column="71" selection-end-line="145" selection-end-column="71" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -146,8 +433,8 @@
       <file leaf-file-name="view group members.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/TEACHER/view group members.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="43" column="152" lean-forward="false" selection-start-line="43" selection-start-column="152" selection-end-line="43" selection-end-column="152" />
+            <state relative-caret-position="252">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
                 <marker date="1648176143503" expanded="false" signature="2485:2491" ph=" " />
               </folding>
@@ -155,28 +442,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view event status.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/TEACHER/view event status.html">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/main_home/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="65" lean-forward="false" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
-              <folding>
-                <marker date="1648118268019" expanded="false" signature="2507:2513" ph=" " />
-                <marker date="1648118268019" expanded="false" signature="2549:2555" ph=" " />
-                <marker date="1648118268019" expanded="false" signature="2596:2602" ph=" " />
-              </folding>
+            <state relative-caret-position="244">
+              <caret line="71" column="84" lean-forward="false" selection-start-line="71" selection-start-column="84" selection-end-line="71" selection-end-column="84" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view and update profile.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/TEACHER/view and update profile.html">
+      <file leaf-file-name="view feedback.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/TEACHER/view feedback.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="82" lean-forward="false" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="82" />
-              <folding>
-                <marker date="1648109823742" expanded="true" signature="7520:7541" ph="..." />
-              </folding>
+            <state relative-caret-position="2310">
+              <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -187,6 +468,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Flask Main" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -204,6 +486,7 @@
       <find>view_registered_teachers</find>
       <find>view_approved_teachers</find>
       <find>view_blocked_teachers</find>
+      <find>view_f</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -213,9 +496,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/DBConnection.py" />
-        <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/templates/ADMIN/view blocked teachers.html" />
-        <option value="$PROJECT_DIR$/templates/ADMIN/view feedback.html" />
         <option value="$PROJECT_DIR$/templates/ADMIN/index.html" />
         <option value="$PROJECT_DIR$/templates/ADMIN/homepage.html" />
         <option value="$PROJECT_DIR$/templates/TEACHER/teacher_homepage.html" />
@@ -226,7 +507,6 @@
         <option value="$PROJECT_DIR$/templates/ADMIN/registerdteachers.html" />
         <option value="$PROJECT_DIR$/templates/ADMIN/adminhomeindex.html" />
         <option value="$PROJECT_DIR$/templates/ADMIN/view approved teachers.html" />
-        <option value="$PROJECT_DIR$/templates/TEACHER/teacher_homeindex.html" />
         <option value="$PROJECT_DIR$/templates/ADMIN/view events &amp; approval.html" />
         <option value="$PROJECT_DIR$/templates/ADMIN/view registerd teacher.html" />
         <option value="$PROJECT_DIR$/templates/TEACHER/teacherregisteration.html" />
@@ -242,12 +522,21 @@
         <option value="$PROJECT_DIR$/templates/TEACHER/view notifications.html" />
         <option value="$PROJECT_DIR$/templates/TEACHER/view event status.html" />
         <option value="$PROJECT_DIR$/templates/TEACHER/share ideas.html" />
-        <option value="$PROJECT_DIR$/templates/TEACHER/share articles.html" />
         <option value="$PROJECT_DIR$/templates/TEACHER/add group.html" />
         <option value="$PROJECT_DIR$/templates/TEACHER/create events.html" />
         <option value="$PROJECT_DIR$/templates/TEACHER/view group members.html" />
         <option value="$PROJECT_DIR$/templates/TEACHER/view group.html" />
+        <option value="$PROJECT_DIR$/templates/TEACHER/share articles.html" />
+        <option value="$PROJECT_DIR$/templates/TEACHER/teacher_student_chat.html" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
+        <option value="$PROJECT_DIR$/templates/TEACHER/teacher_homeindex.html" />
+        <option value="$PROJECT_DIR$/templates/TEACHER/teacher_reg.html" />
+        <option value="$PROJECT_DIR$/templates/ADMIN/home.html" />
         <option value="$PROJECT_DIR$/chatbot.py" />
+        <option value="$PROJECT_DIR$/templates/ADMIN/view feedback.html" />
+        <option value="$PROJECT_DIR$/templates/TEACHER/view feedback.html" />
+        <option value="$PROJECT_DIR$/templates/TEACHER/teach_home.html" />
+        <option value="$PROJECT_DIR$/templates/main_home/home.html" />
       </list>
     </option>
   </component>
@@ -259,9 +548,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="y" value="2" />
+    <option name="width" value="1934" />
+    <option name="height" value="1036" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -279,8 +568,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Python 3.9.6 (C:\Users\HP\AppData\Local\Programs\Python\Python39\python.exe) &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="chatbot" />
@@ -337,6 +642,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="main_home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ADMIN" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -355,64 +678,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="teacher_approve" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="teacher_approve" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../recipe_from_vegetables" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\PycharmProjects\chatbot\static\home_design" />
+      <recent name="C:\Users\HP\PycharmProjects\chatbot\static\teach_sign" />
+      <recent name="C:\Users\HP\PycharmProjects\chatbot\static\teacher_home" />
+      <recent name="D:\chatbot\static" />
       <recent name="C:\Users\HP\PycharmProjects\chatbot\templates\TEACHER" />
-      <recent name="C:\Users\HP\PycharmProjects\chatbot\static\teacherreg" />
-      <recent name="C:\Users\HP\PycharmProjects\chatbot\static\teacher_homepage" />
-      <recent name="C:\Users\HP\PycharmProjects\chatbot\templates\ADMIN" />
-      <recent name="C:\Users\HP\PycharmProjects\chatbot\static\admin_homepage" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -613,15 +895,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="2" width="1934" height="1036" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25036603" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947807" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33280757" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3303671" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -668,194 +950,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/chatbot.py</url>
-          <line>192</line>
+          <line>196</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/login/images/bg-01.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/login/fonts/font-awesome-4.7.0/css/font-awesome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/teacher_registeration/css/main.css" />
-    <entry file="file://$PROJECT_DIR$/static/teachersignup/css/main.css" />
-    <entry file="file://$PROJECT_DIR$/static/teacher_signup/css/main.css" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python39/Lib/site-packages/flask/app.py" />
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/web-forms.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12411">
-          <caret line="591" column="16" lean-forward="false" selection-start-line="591" selection-start-column="16" selection-end-line="591" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/admin_homepage/scss/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13734">
-          <caret line="654" column="1" lean-forward="false" selection-start-line="654" selection-start-column="1" selection-end-line="654" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/teacher_homepage/js/form.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/teacher_approve/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ADMIN/registerdteachers.html" />
-    <entry file="file://$PROJECT_DIR$/static/teacher_approve/css/bootstrap/mixins/_visibility.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/admin_homepage/css/colors/red.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ADMIN/homepage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ADMIN/adminhomeindex.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="213" column="0" lean-forward="false" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ADMIN/adminhome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/TEACHER/teacher_homepage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="37" column="29" lean-forward="false" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/teacher_homepage/css/colors/red.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/TEACHER/teachersignup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1281">
-          <caret line="61" column="43" lean-forward="false" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/TEACHER/teacher_homeindex.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6489">
-          <caret line="309" column="56" lean-forward="false" selection-start-line="309" selection-start-column="56" selection-end-line="309" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/teacherreg/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/static/teacherreg/css/main.css" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python39/Lib/site-packages/flask/debughelpers.py" />
-    <entry file="file://$PROJECT_DIR$/templates/TEACHER/teacher_sign.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ADMIN/homeindex.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ADMIN/view events &amp; approval.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="43" lean-forward="false" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/teacher_approve/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/TEACHER/teacherregisteration.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="27" column="34" lean-forward="true" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ADMIN/view registerd teacher.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ADMIN/view approved teachers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="39" column="6" lean-forward="true" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/static/teacher_approve/css/bootstrap.min.css" />
     <entry file="file://$PROJECT_DIR$/templates/ADMIN/view blocked teachers.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
@@ -874,13 +980,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="335">
           <caret line="75" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ADMIN/sent notifications.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -905,175 +1004,370 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="80" column="14" lean-forward="true" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/teacher_approve/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="8193" column="21" lean-forward="false" selection-start-line="8193" selection-start-column="21" selection-end-line="8193" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/static/teacher_approve/css/style.css" />
     <entry file="file://$PROJECT_DIR$/templates/TEACHER/view rating.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="60" lean-forward="false" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
-          <folding>
-            <marker date="1648118268097" expanded="false" signature="2348:2354" ph=" " />
-            <marker date="1648118268097" expanded="false" signature="2396:2402" ph=" " />
-            <marker date="1648118268097" expanded="false" signature="2435:2441" ph=" " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/TEACHER/view notifications.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="66" lean-forward="false" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
-          <folding>
-            <marker date="1648118267925" expanded="false" signature="2345:2351" ph=" " />
-            <marker date="1648118267925" expanded="false" signature="2393:2399" ph=" " />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/TEACHER/view event status.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="399">
           <caret line="19" column="65" lean-forward="false" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
-          <folding>
-            <marker date="1648118268019" expanded="false" signature="2507:2513" ph=" " />
-            <marker date="1648118268019" expanded="false" signature="2549:2555" ph=" " />
-            <marker date="1648118268019" expanded="false" signature="2596:2602" ph=" " />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/TEACHER/view and update profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
+        <state relative-caret-position="546">
           <caret line="26" column="82" lean-forward="false" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="82" />
-          <folding>
-            <marker date="1648109823742" expanded="true" signature="7520:7541" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/TEACHER/share ideas.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="59" lean-forward="false" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/TEACHER/share articles.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="62" lean-forward="false" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
-          <folding>
-            <marker date="1648118267815" expanded="true" signature="2963:2970" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/TEACHER/add group.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="323">
           <caret line="19" column="65" lean-forward="false" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/TEACHER/create events.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
+        <state relative-caret-position="630">
           <caret line="30" column="37" lean-forward="false" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/TEACHER/share articles.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="861">
+          <caret line="41" column="55" lean-forward="false" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/TEACHER/teacher_student_chat.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3234">
+          <caret line="154" column="18" lean-forward="false" selection-start-line="154" selection-start-column="18" selection-end-line="154" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/jquery.js" />
+    <entry file="file://$PROJECT_DIR$/templates/TEACHER/share ideas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="59" lean-forward="false" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python36/Lib/importlib/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/static/teacher_home/css/colors/red.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/teach_sign/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/TEACHER/teachersignup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1273">
+          <caret line="159" column="36" lean-forward="true" selection-start-line="159" selection-start-column="36" selection-end-line="159" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="36" column="61" lean-forward="true" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/TEACHER/view notifications.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-617">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/TEACHER/teacher_homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/TEACHER/teacher_homeindex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="225" column="64" lean-forward="false" selection-start-line="225" selection-start-column="64" selection-end-line="225" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ADMIN/adminhome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1365">
+          <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ADMIN/homeindex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/TEACHER/view group members.html">
+    <entry file="file://$PROJECT_DIR$/templates/ADMIN/homepage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="43" column="152" lean-forward="false" selection-start-line="43" selection-start-column="152" selection-end-line="43" selection-end-column="152" />
+        <state relative-caret-position="315">
+          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/teacher_photo/220425-093948.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/teacher_photo/220425-093638.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/teacher_photo/220425-092501.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/TEACHER/teacher_sign.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="882">
+          <caret line="42" column="15" lean-forward="false" selection-start-line="37" selection-start-column="6" selection-end-line="42" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/TEACHER/teacherregisteration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="38" column="111" lean-forward="false" selection-start-line="38" selection-start-column="82" selection-end-line="38" selection-end-column="111" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/TEACHER/teacher_reg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="25" column="114" lean-forward="false" selection-start-line="25" selection-start-column="114" selection-end-line="25" selection-end-column="114" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/home_design/vendor/aos/aos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1565">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ADMIN/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1449">
+          <caret line="69" column="32" lean-forward="false" selection-start-line="67" selection-start-column="36" selection-end-line="69" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ADMIN/adminhomeindex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1969">
+          <caret line="213" column="0" lean-forward="false" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ADMIN/sent notifications.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-753">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ADMIN/view approved teachers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="39" column="6" lean-forward="true" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ADMIN/view events &amp; approval.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21">
+          <caret line="29" column="43" lean-forward="false" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ADMIN/view registerd teacher.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="10" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ADMIN/view feedback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="36" column="31" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/TEACHER/view feedback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2310">
+          <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/TEACHER/teach_home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="145" column="71" lean-forward="false" selection-start-line="145" selection-start-column="71" selection-end-line="145" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatbot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8001">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
           <folding>
-            <marker date="1648176143503" expanded="false" signature="2485:2491" ph=" " />
+            <element signature="e#0#64#0" expanded="true" />
+            <marker date="1652156412632" expanded="true" signature="495:572" ph="select * fro... login" />
+            <marker date="1652156412632" expanded="true" signature="1614:1711" ph="SELECT * FRO... login" />
+            <marker date="1652156412632" expanded="true" signature="1949:2014" ph="update login... " />
+            <marker date="1652156412632" expanded="true" signature="2283:2348" ph="update login... " />
+            <marker date="1652156412632" expanded="true" signature="2629:2726" ph="SELECT * FRO... login" />
+            <marker date="1652156412632" expanded="true" signature="2986:3083" ph="SELECT * FRO... login" />
+            <marker date="1652156412632" expanded="true" signature="3328:3389" ph="update login... " />
+            <marker date="1652156412632" expanded="true" signature="3660:3702" ph="delete from " />
+            <marker date="1652156412632" expanded="true" signature="3724:3770" ph="delete from " />
+            <marker date="1652156412632" expanded="true" signature="4053:4120" ph="SELECT * FRO... event" />
+            <marker date="1652156412632" expanded="true" signature="4369:4428" ph="update event... " />
+            <marker date="1652156412632" expanded="true" signature="4692:4738" ph="delete from " />
+            <marker date="1652156412632" expanded="true" signature="5001:5098" ph="SELECT feedb... feedback" />
+            <marker date="1652156412632" expanded="true" signature="5464:5529" ph="select * fro... notification" />
+            <marker date="1652156412632" expanded="true" signature="5722:5803" ph="insert into notification... " />
+            <marker date="1652156412632" expanded="true" signature="7406:7452" ph="select * fro... login" />
+            <marker date="1652156412632" expanded="true" signature="7680:7787" ph="insert into login... " />
+            <marker date="1652156412632" expanded="true" signature="7821:7989" ph="insert into teacher... " />
+            <marker date="1652156412632" expanded="true" signature="9256:9512" ph="update teach... " />
+            <marker date="1652156412632" expanded="true" signature="9696:9930" ph="update teach... " />
+            <marker date="1652156412632" expanded="true" signature="10106:10376" ph="update teach... " />
+            <marker date="1652156412632" expanded="true" signature="10568:10632" ph="select * fro... teacher" />
+            <marker date="1652156412632" expanded="true" signature="10991:11041" ph="select * fro... groups" />
+            <marker date="1652156412632" expanded="true" signature="11229:11321" ph="insert into groups... " />
+            <marker date="1652156412632" expanded="true" signature="11847:11938" ph="select * fro... group_members" />
+            <marker date="1652156412632" expanded="true" signature="12134:12222" ph="insert into group_members... " />
+            <marker date="1652156412632" expanded="true" signature="12396:12459" ph="select * fro... groups" />
+            <marker date="1652156412632" expanded="true" signature="12490:12511" ph="select * fro... student" />
+            <marker date="1652156412632" expanded="true" signature="12931:13080" ph="insert into event... " />
+            <marker date="1652156412632" expanded="true" signature="13442:13505" ph="SELECT * FRO... event" />
+            <marker date="1652156412632" expanded="true" signature="13756:13782" ph="SELECT * FRO... notification" />
+            <marker date="1652156412632" expanded="true" signature="14026:14033" ph="SELECT * FRO... notification" />
+            <marker date="1652156412632" expanded="true" signature="14026:14123" ph="SELECT * FRO... feedback" />
+            <marker date="1652156412632" expanded="true" signature="14469:14511" ph="select * fro... ideas" />
+            <marker date="1652156412632" expanded="true" signature="14700:14799" ph="insert into ideas... " />
+            <marker date="1652156412632" expanded="true" signature="15556:15697" ph="insert into articles... " />
+            <marker date="1652156412632" expanded="true" signature="16046:16117" ph="SELECT * FRO... rating" />
+            <marker date="1652156412632" expanded="true" signature="16346:16409" ph="SELECT * FRO... groups" />
+            <marker date="1652156412632" expanded="true" signature="16436:16463" ph="select * fro... group_members" />
+            <marker date="1652156412632" expanded="true" signature="16708:16751" ph="delete from " />
+            <marker date="1652156412632" expanded="true" signature="16773:16823" ph="delete from " />
+            <marker date="1652156412632" expanded="true" signature="17094:17216" ph="SELECT * FRO... group_members" />
+            <marker date="1652156412632" expanded="true" signature="17473:17531" ph="delete from " />
+            <marker date="1652156412632" expanded="true" signature="18013:18034" ph="select * fro... student" />
+            <marker date="1652156412632" expanded="true" signature="18543:18624" ph="insert into chat... " />
+            <marker date="1652156412632" expanded="true" signature="19140:19179" ph="select * fro... chat" />
+            <marker date="1652156412632" expanded="true" signature="20237:20322" ph="select * fro... login" />
+            <marker date="1652156412632" expanded="true" signature="20691:20738" ph="select * fro... student" />
+            <marker date="1652156412632" expanded="true" signature="21038:21135" ph="select * fro... event" />
+            <marker date="1652156412632" expanded="true" signature="21431:21506" ph="select * fro... articles" />
+            <marker date="1652156412632" expanded="true" signature="21798:21867" ph="select * fro... ideas" />
+            <marker date="1652156412632" expanded="true" signature="22173:22199" ph="select * fro... notification" />
+            <marker date="1652156412632" expanded="true" signature="22521:22687" ph="SELECT * FRO... groups" />
+            <marker date="1652156412632" expanded="true" signature="23029:23137" ph="select * fro... group_members" />
+            <marker date="1652156412632" expanded="true" signature="23496:23579" ph="insert into feedback... " />
+            <marker date="1652156412632" expanded="true" signature="24437:24536" ph="insert into login... " />
+            <marker date="1652156412632" expanded="true" signature="24560:24754" ph="insert into student... " />
+            <marker date="1652156412632" expanded="true" signature="25121:25227" ph="insert into rating_article... " />
+            <marker date="1652156412632" expanded="true" signature="25585:25686" ph="insert into rating_ideas... " />
+            <marker date="1652156412632" expanded="true" signature="26038:26134" ph="insert into chat... " />
+            <marker date="1652156412632" expanded="true" signature="26442:26583" ph="select chat.... chat" />
+            <marker date="1652156412632" expanded="true" signature="27082:27103" ph="select * fro... teacher" />
+            <marker date="1652156412632" expanded="true" signature="27775:27868" ph="insert into chatbotchat... " />
+            <marker date="1652156412632" expanded="true" signature="27916:27938" ph="select * fro... chatboat" />
+            <marker date="1652156412632" expanded="true" signature="28249:28324" ph="insert into chatbotchat... " />
+            <marker date="1652156412632" expanded="true" signature="28249:28348" ph="insert into chatbotchat... " />
+            <marker date="1652156412632" expanded="true" signature="28646:28739" ph="insert into chat... " />
+            <marker date="1652156412632" expanded="true" signature="28783:28805" ph="select * fro... chatboat" />
+            <marker date="1652156412632" expanded="true" signature="29513:29592" ph="insert into chatbotchat... " />
+            <marker date="1652156412632" expanded="true" signature="29513:29616" ph="insert into chatbotchat... " />
+            <marker date="1652156412632" expanded="true" signature="30064:30209" ph="select chat.... chat" />
+            <marker date="1652156412632" expanded="true" signature="30483:30512" ph="delete from " />
+            <marker date="1652156412632" expanded="true" signature="30483:30530" ph="delete from " />
+            <marker date="1652156412632" expanded="true" signature="30548:30593" ph="delete from " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/TEACHER/view group.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
+        <state relative-caret-position="338">
           <caret line="51" column="24" lean-forward="false" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/TEACHER/view group members.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <marker date="1648176353777" expanded="false" signature="2593:2599" ph=" " />
-            <marker date="1648176353777" expanded="false" signature="2725:2731" ph=" " />
+            <marker date="1648176143503" expanded="false" signature="2485:2491" ph=" " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chatbot.py">
+    <entry file="file://$PROJECT_DIR$/templates/main_home/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="422" column="0" lean-forward="true" selection-start-line="422" selection-start-column="0" selection-end-line="422" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-            <marker date="1648176353206" expanded="true" signature="377:454" ph="select * fro... login" />
-            <marker date="1648176353206" expanded="true" signature="1490:1587" ph="SELECT * FRO... login" />
-            <marker date="1648176353206" expanded="true" signature="1825:1890" ph="update login... " />
-            <marker date="1648176353206" expanded="true" signature="2159:2224" ph="update login... " />
-            <marker date="1648176353206" expanded="true" signature="2505:2602" ph="SELECT * FRO... login" />
-            <marker date="1648176353206" expanded="true" signature="2862:2959" ph="SELECT * FRO... login" />
-            <marker date="1648176353206" expanded="true" signature="3204:3265" ph="update login... " />
-            <marker date="1648176353206" expanded="true" signature="3536:3578" ph="delete from " />
-            <marker date="1648176353206" expanded="true" signature="3600:3646" ph="delete from " />
-            <marker date="1648176353206" expanded="true" signature="3929:3996" ph="SELECT * FRO... event" />
-            <marker date="1648176353206" expanded="true" signature="4245:4304" ph="update event... " />
-            <marker date="1648176353206" expanded="true" signature="4568:4614" ph="delete from " />
-            <marker date="1648176353206" expanded="true" signature="4877:4974" ph="SELECT feedb... feedback" />
-            <marker date="1648176353206" expanded="true" signature="5340:5405" ph="select * fro... notification" />
-            <marker date="1648176353206" expanded="true" signature="5598:5679" ph="insert into notification... " />
-            <marker date="1648176353206" expanded="true" signature="7384:7430" ph="select * fro... login" />
-            <marker date="1648176353206" expanded="true" signature="7658:7765" ph="insert into login... " />
-            <marker date="1648176353206" expanded="true" signature="7799:7967" ph="insert into teacher... " />
-            <marker date="1648176353206" expanded="true" signature="9240:9496" ph="update teach... " />
-            <marker date="1648176353206" expanded="true" signature="9680:9914" ph="update teach... " />
-            <marker date="1648176353206" expanded="true" signature="10090:10360" ph="update teach... " />
-            <marker date="1648176353206" expanded="true" signature="10552:10616" ph="select * fro... teacher" />
-            <marker date="1648176353206" expanded="true" signature="10975:10995" ph="select * fro... grop" />
-            <marker date="1648176353206" expanded="true" signature="10975:11014" ph="select * fro... groups" />
-            <marker date="1648176353206" expanded="true" signature="10975:11025" ph="select * fro... groups" />
-            <marker date="1648176353206" expanded="true" signature="11213:11305" ph="insert into groups... " />
-            <marker date="1648176353206" expanded="true" signature="11831:11873" ph="select * fro... group_members" />
-            <marker date="1648176353206" expanded="true" signature="11831:11875" ph="select * fro... group_members" />
-            <marker date="1648176353206" expanded="true" signature="11831:11889" ph="select * fro... group_members" />
-            <marker date="1648176353206" expanded="true" signature="11831:11906" ph="select * fro... group_members" />
-            <marker date="1648176353206" expanded="true" signature="11831:11922" ph="select * fro... group_members" />
-            <marker date="1648176353206" expanded="true" signature="12118:12206" ph="insert into group_members... " />
-            <marker date="1648176353206" expanded="true" signature="12380:12443" ph="select * fro... groups" />
-            <marker date="1648176353206" expanded="true" signature="12474:12495" ph="select * fro... student" />
-            <marker date="1648176353206" expanded="true" signature="12915:13064" ph="insert into event... " />
-            <marker date="1648176353206" expanded="true" signature="13426:13489" ph="SELECT * FRO... event" />
-            <marker date="1648176353206" expanded="true" signature="13740:13766" ph="SELECT * FRO... notification" />
-            <marker date="1648176353206" expanded="true" signature="14115:14148" ph="select * fro... ideas" />
-            <marker date="1648176353206" expanded="true" signature="14115:14157" ph="select * fro... ideas" />
-            <marker date="1648176353206" expanded="true" signature="14346:14445" ph="insert into ideas... " />
-            <marker date="1648176353206" expanded="true" signature="15202:15343" ph="insert into articles... " />
-            <marker date="1648176353206" expanded="true" signature="15692:15763" ph="SELECT * FRO... rating" />
-            <marker date="1648176353206" expanded="true" signature="15992:16055" ph="SELECT * FRO... groups" />
-            <marker date="1648176353206" expanded="true" signature="16082:16109" ph="select * fro... group_members" />
-            <marker date="1648176353206" expanded="true" signature="16354:16397" ph="delete from " />
-            <marker date="1648176353206" expanded="true" signature="16419:16469" ph="delete from " />
-            <marker date="1648176353206" expanded="true" signature="16740:16862" ph="SELECT * FRO... group_members" />
-            <marker date="1648176353206" expanded="true" signature="17119:17177" ph="delete from " />
-          </folding>
+        <state relative-caret-position="244">
+          <caret line="71" column="84" lean-forward="false" selection-start-line="71" selection-start-column="84" selection-end-line="71" selection-end-column="84" />
+          <folding />
         </state>
       </provider>
     </entry>

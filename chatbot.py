@@ -8,9 +8,14 @@ app.secret_key="abc"
 app.debug=True
 
 @app.route('/',methods=['get','post'])
+def home():
+    return  render_template('main_home/home.html')
+
+
+@app.route('/log',methods=['get','post'])
 def login():
     if request.method=="POST":
-        username=request.form['username']
+        username=request.form['name']
         password=request.form['pass']
         db = Db()
         qry=db.selectOne("select * from login where username='"+username+"' and password='"+password+"'")
@@ -24,12 +29,12 @@ def login():
                 session['lid']=qry['login_id']
                 return '''<script>alert('login successfully');window.location="/teacher_homepage"</script>'''
             else:
-                return '''<script>alert('user not found');window.location="/"</script>'''
+                return '''<script>alert('user not found');window.location="/log"</script>'''
         else:
-            return '''<script>alert('user not found');window.location="/"</script>'''
+            return '''<script>alert('user not found');window.location="/log"</script>'''
 
     else:
-        return render_template('index.html')
+        return render_template('login.html')
 
 
 @app.route('/admin_homepage')
@@ -171,7 +176,7 @@ def sent_notifications():
 @app.route('/teacher_homepage')
 def teacher_homepage():
     if session['lg'] == 'lin':
-        return  render_template('TEACHER/teacher_homeindex.html')
+        return  render_template('TEACHER/teach_home.html')
     else:
         return redirect('/')
 
@@ -184,17 +189,16 @@ def teacher_sign():
         place= request.form['place']
         post = request.form['post']
         pin = request.form['pin']
-        photo= request.files['fileField']
+        photo= request.files['photo']
         date=datetime.datetime.now().strftime("%y%m%d-%H%M%S")
-        # photo.save(r"C:\Users\HP\PycharmProjects\chatbot\static\teacher_photo\\"+date+'.jpg')
-        photo.save(r"C:\Users\IDZ\Downloads\chatbot\static\teacher_photo\\"+date+'.jpg')
+        photo.save(r"C:\Users\HP\PycharmProjects\chatbot\static\teacher_photo\\"+date+'.jpg')
         path="/static/teacher_photo/"+date+'.jpg'
         gender = request.form['RadioGroup1']
         qualification = request.form['qualification']
         phoneno = request.form['no']
         email = request.form['email']
         password = request.form['pass']
-        confirm_password= request.form['conpass']
+        confirm_password= request.form['re_pass']
         db = Db()
         qry1=db.selectOne("select * from login WHERE username='"+email+"'")
         if qry1 is not None:
@@ -204,12 +208,12 @@ def teacher_sign():
                     qry = db.insert("insert into login(username,password,user_type) VALUES('" + email + "','" + confirm_password + "','pending')")
                     db.insert("insert into teacher VALUES('"+str(qry)+"','"+teachername+"','"+place+"','"+post+"','"+pin+"','"+str(path)+"','"+gender+"','"+qualification+"','"+phoneno+"','"+email+"')")
 
-                    return '''<script>alert('added successfully');window.location="/"</script>'''
+                    return '''<script>alert('added successfully');window.location="/log"</script>'''
             else:
                     return '''<script>alert('password mismatch');window.location="/teacher_sign"</script>'''
 
     else:
-        return render_template('TEACHER/teacherregisteration.html')
+        return render_template('TEACHER/teacher_reg.html')
 
 
 @app.route('/view_update_teacher_profile',methods=['get','post'])
@@ -324,6 +328,17 @@ def view_notifications():
     else:
         return redirect('/')
 
+@app.route('/view_feedbacks')
+def view_feedbacks():
+    if session['lg'] == "lin":
+        db = Db()
+        qry = db.select("SELECT feedbacks,student_name FROM feedback,student WHERE feedback.feedback_id=student.student_id")
+        return render_template('TEACHER/view feedback.html',data=qry)
+    else:
+        return redirect('/')
+
+
+
 
 @app.route('/share_idea',methods=['get','post'])
 def share_idea():
@@ -406,6 +421,84 @@ def delete_group_member(gmid):
     else:
         return redirect('/')
 
+@app.route('/t_s_chat')
+def t_s_chat():
+    if session['lg'] == "lin":
+        return render_template("TEACHER/teacher_student_chat.html")
+    else:
+        return redirect('/')
+
+@app.route('/company_staff_chat', methods=['post'])
+def company_staff_chat():
+    if session['lg'] == "lin":
+        db = Db()
+        a = session['lid']
+        q1 = "select * from student"
+        res = db.select(q1)
+        v = {}
+        if len(res) > 0:
+            v["status"] = "ok"
+            v['data'] = res
+        else:
+            v["status"] = "error"
+
+        rw = demjson.encode(v)
+        print(rw)
+        return rw
+    else:
+        return redirect('/')
+
+@app.route('/chatsnd', methods=['post'])
+def chatsnd():
+    if session['lg'] == "lin":
+        db = Db()
+        c = session['lid']
+        b = request.form['n']
+        print(b)
+        m = request.form['m']
+
+        q2 = "insert into chat values(null,'" + str(c) + "','" + str(b) + "','" + m + "',now())"
+        res = db.insert(q2)
+        v = {}
+        if int(res) > 0:
+            v["status"] = "ok"
+
+        else:
+            v["status"] = "error"
+
+        r = demjson.encode(v)
+
+        return r
+    else:
+        return login()
+
+@app.route('/chatrply', methods=['post'])
+def chatrply():
+    if session['lg'] == "lin":
+        print("...........................")
+        c = session['lid']
+        b = request.form['n']
+        print("<<<<<<<<<<<<<<<<<<<<<<<<")
+        print(b)
+        t = Db()
+        qry2 = "select * from chat ORDER BY chat_id ASC ";
+        res = t.select(qry2)
+        print(res)
+
+        v = {}
+        if len(res) > 0:
+            v["status"] = "ok"
+            v['data'] = res
+            v['id'] = c
+        else:
+            v["status"] = "error"
+
+        rw = demjson.encode(v)
+        return rw
+    else:
+        return login()
+
+
 # @app.route('/adminhomepage')
 # def adminhomepage():
 #
@@ -437,6 +530,350 @@ def and_login():
     else:
         res['status']="none"
         return demjson.encode(res)
+
+
+@app.route('/and_viewprofile',methods=['post'])
+def and_viewprofile():
+    id=request.form['id']
+    db=Db()
+    qry=db.selectOne("select * from student where student_id='"+id+"'")
+    res = {}
+    if qry:
+        res['status'] = "ok"
+        res['data']=qry
+        return demjson.encode(res)
+    else:
+        res['status']="none"
+        return demjson.encode(res)
+
+
+@app.route('/and_approvedevents',methods=['post'])
+def and_approvedevents():
+    db=Db()
+    qry=db.select("select * from event,teacher where event.teacher_id=teacher.teacher_id and event.status='approved'")
+    res = {}
+    if qry:
+        res['status'] = "ok"
+        res['data']=qry
+        return demjson.encode(res)
+    else:
+        res['status']="none"
+        return demjson.encode(res)
+
+
+@app.route('/and_viewarticles',methods=['post'])
+def and_viewarticles():
+    db=Db()
+    qry=db.select("select * from articles,teacher where teacher.teacher_id=articles.teacher_id ")
+    res = {}
+    if qry:
+        res['status'] = "ok"
+        res['data']=qry
+        return demjson.encode(res)
+    else:
+        res['status']="none"
+        return demjson.encode(res)
+
+
+
+@app.route('/and_viewideas',methods=['post'])
+def and_viewideas():
+    db=Db()
+    qry=db.select("select * from ideas,teacher where teacher.teacher_id=ideas.teacher_id ")
+    res = {}
+    if qry:
+        res['status'] = "ok"
+        res['data']=qry
+        return demjson.encode(res)
+    else:
+        res['status']="none"
+        return demjson.encode(res)
+
+@app.route('/and_viewnotifications',methods=['post'])
+def and_viewnotifications():
+    db=Db()
+    qry=db.select("select * from notification")
+    res = {}
+    if qry:
+        res['status'] = "ok"
+        res['data']=qry
+        return demjson.encode(res)
+    else:
+        res['status']="none"
+        return demjson.encode(res)
+
+
+@app.route('/and_viewgroup',methods=['post'])
+def and_viewgroup():
+    id = request.form['id']
+    db = Db()
+    qry = db.select("SELECT * FROM groups,teacher,group_members WHERE groups.teacher_id=teacher.teacher_id AND groups.group_id=group_members.group_id AND group_members.student_id='"+id+"'")
+    res = {}
+    if qry:
+        res['status'] = "ok"
+        res['data'] = qry
+        return demjson.encode(res)
+    else:
+        res['status'] = "none"
+        return demjson.encode(res)
+
+@app.route('/and_view_groupmembers',methods=['post'])
+def and_viewgroupmembers():
+    gid = request.form['gid']
+    db = Db()
+    qry = db.select("select * from group_members,student where group_members.student_id=student.student_id and group_id='"+gid+"'")
+    res = {}
+    if qry:
+        res['status'] = "ok"
+        res['data'] = qry
+        return demjson.encode(res)
+    else:
+        res['status'] = "none"
+        return demjson.encode(res)
+
+@app.route('/and_sendfeedback',methods=['post'])
+def and_sendfeedback():
+    id = request.form['id']
+    f = request.form['fed']
+    db = Db()
+    qry = db.insert("insert into feedback(student_id,feedbacks,date) VALUES ('"+id+"','"+f+"',curdate())")
+    res = {}
+    if qry:
+        res['status'] = "ok"
+        return demjson.encode(res)
+    else:
+        res['status'] = "none"
+        return demjson.encode(res)
+
+
+
+@app.route('/and_signup',methods=['post'])
+def and_signup():
+    db=Db()
+    name = request.form['n']
+    place = request.form['pla']
+    post = request.form['post']
+    pin = request.form['pin']
+    photo = request.files['pic']
+    date = datetime.datetime.now().strftime("%y%m%d-%H%M%S")
+    # photo.save(r"D:\chatbot\static\student_photo\\" + date + '.jpg')
+    photo.save(r"C:\Users\HP\PycharmProjects\chatbot\static\student_photo\\" + date + '.jpg')
+    path = "/static/student_photo/" + date + '.jpg'
+    gender = request.form['g']
+    course = request.form['c']
+    phoneno = request.form['ph']
+    email = request.form['e']
+    password = request.form['p']
+
+    qry = db.insert("insert into login(username,password,user_type) VALUES('" + email + "','" + password + "','student')")
+    qry1= db.insert("insert into student VALUES('" + str(qry) + "','" + name + "','" + place + "','" + post + "','" + pin + "','" + str(path) + "','" + gender + "','" + course + "','" + phoneno + "','" + email + "')")
+
+    res = {}
+    if qry:
+        res['status'] = "ok"
+        return demjson.encode(res)
+    else:
+        res['status'] = "none"
+        return demjson.encode(res)
+
+
+
+@app.route('/and_rate_articles',methods=['post'])
+def and_rate_articles():
+    id = request.form['id']
+    r = request.form['rate']
+    a = request.form['aid']
+    db = Db()
+    qry = db.insert("insert into rating_article(student_id,ratings,date,article_id) VALUES ('"+id+"','"+r+"',curdate(),'"+a+"')")
+    res = {}
+    if qry:
+        res['status'] = "ok"
+        return demjson.encode(res)
+    else:
+        res['status'] = "none"
+        return demjson.encode(res)
+
+@app.route('/and_rate_ideas',methods=['post'])
+def and_rate_ideas():
+    id = request.form['id']
+    r = request.form['rate']
+    a = request.form['iid']
+    db = Db()
+    qry = db.insert("insert into rating_ideas(student_id,ratings,date,idea_id) VALUES ('"+id+"','"+r+"',curdate(),'"+a+"')")
+    res = {}
+    if qry:
+        res['status'] = "ok"
+        return demjson.encode(res)
+    else:
+        res['status'] = "none"
+        return demjson.encode(res)
+
+
+
+
+
+
+
+@app.route('/add_chat',methods=['post'])
+def add_chat():
+    lid = request.form['id']
+    toid = request.form['toid']
+    message = request.form['message']
+    db=Db()
+
+    q2="insert into chat(from_id,to_id,message,date)values('"+lid+"','"+toid+"','"+message+"',curdate())"
+    res = db.insert(q2)
+    res1 = {}
+    res1['status'] = "Inserted"
+    return demjson.encode(res1)
+
+@app.route('/view_chat',methods=['post'])
+def view_chat():
+    lid = request.form['id']
+    toid = request.form['toid']
+    lastid = request.form['lastid']
+    db=Db()
+    print(lid,toid,lastid)
+    q2="select chat.* from chat where chat_id>'"+lastid+"' and ((from_id='"+lid+"' and to_id='"+toid+"') or (from_id='"+toid+"' and to_id='"+lid+"'))"
+    res = db.select(q2)
+    print(res)
+    res1 = {}
+    res1['status'] = "ok"
+    res1['data'] = res
+    return demjson.encode(res1)
+@app.route('/view_staff',methods=['post'])
+def view_chatcouncillor():
+    lid = request.form['lid']
+    db=Db()
+
+    print(lid)
+    # qry = db.selectOne("select * from student,course where student.stud_course_id=course.course_id and student.stud_id='" + str(lid) + "'")
+    # print(qry)
+    # cid = qry['stud_course_id']
+    # y = qry['batch']
+    q = db.select("select * from teacher ")
+    # print(q, cid)
+    res1 = {}
+    res1['status'] = "ok"
+    res1['data'] = q
+    return demjson.encode(res1)
+
+# =====================================================================================================================================
+#                                             MAIN SECTION---CHAT BOAT
+# ====================================================================================================================================
+
+
+# @app.route('/chatbot_add_chat',methods=['post'])
+# def chatbot_add_chat():
+#     lid = request.form['id']
+#     # toid = request.form['toid']
+#     message = request.form['message']
+#     db=Db()
+#
+#     q2="insert into chatbotchat(from_id,to_id,botmsg,date)values('"+lid+"',1,'"+message+"',curdate())"
+#     res = db.insert(q2)
+#     q3=db.select("select * from chatboat")
+#     for i in q3:
+#         qtns=i['questions']
+#         print(qtns)
+#         import spacy
+#         nlp = spacy.load("en_core_web_lg")
+#         doc1 = nlp(qtns)
+#         doc2 = nlp(message)
+#         print(doc1, doc2)
+#         ans = (doc1.similarity(doc2))
+#         print(ans)
+#
+#         db.insert("insert into chatbotchat(from_id,to_id,botmsg,date)values(1,'"+str(lid)+"','"+str(ans)+"',curdate())")
+#
+#         res1 = {}
+#         res1['status'] = "Inserted"
+#         return demjson.encode(res1)
+
+
+@app.route('/chatbot_add_chat',methods=['post'])
+def chatbot_add_chat():
+    lid = request.form['id']
+    # toid = request.form['toid']
+    message = request.form['message']
+    db=Db()
+
+    q2="insert into chatbotchat(from_id,to_id,botmsg,date)values('"+lid+"',1,'"+message+"',curdate())"
+    res = db.insert(q2)
+    q3=db.select("select * from chatboat")
+    score=[]
+    ans=[]
+    for i in q3:
+        qtns=i['questions']
+        answer=i['answers']
+        import spacy
+        # nlp = spacy.load("en_core_web_lg")
+
+        sim=cht(message, qtns)
+        print("LL ", sim, qtns)
+        score.append(sim)
+        ans.append(answer)
+
+
+
+    res1 = {}
+    res1['status'] = "Inserted"
+    temp=round(score[0],2)
+    score[0]=round(score[0],2)
+    for j in range(1, len(score)):
+        if round(score[j]>temp):
+            temp=round(score[j], 2)
+            score[j]=round(score[j], 2)
+    print("High   ",temp)
+    if temp<0.65:
+        answ="Sorry.. i didnt get you"
+    else:
+        idx=score.index(temp)
+        answ=str(ans[idx])
+    db.insert(
+        "insert into chatbotchat(from_id,to_id,botmsg,date)values(1,'" + str(lid) + "','" + answ + "',curdate())")
+
+    return demjson.encode(res1)
+
+def cht(a,b):
+
+    import spacy
+    nlp = spacy.load("en_core_web_lg")
+    doc1 = nlp(a)
+    doc2 = nlp(b)
+    print(doc1,doc2)
+    ans=(doc1.similarity(doc2))
+    print(ans)
+    return ans
+
+
+
+@app.route('/chatbot_view_chat',methods=['post'])
+def chatbot_view_chat():
+    lid = request.form['id']
+    # toid = request.form['toid']
+    lastid = request.form['lastid']
+    db=Db()
+    # print(lid,lastid)
+    q2="select chatbotchat.* from chatbotchat where chatbot_chat_id>'"+lastid+"' and ((from_id='"+lid+"' and to_id=1) or (from_id=1 and to_id='"+lid+"'))"
+    res = db.select(q2)
+    # print(res)
+    res1 = {}
+    res1['status'] = "ok"
+    res1['data'] = res
+    return demjson.encode(res1)
+
+@app.route('/chatbot_delete_chat',methods=['post'])
+def chatbot_delete_chat():
+    lid = request.form['id']
+    db=Db()
+    db.delete("delete from chatbotchat WHERE from_id='"+lid+"'")
+    db.delete("delete from chatbotchat WHERE to_id='"+lid+"'")
+    res1 = {}
+    res1['status'] = "ok"
+    return demjson.encode(res1)
+
+
 
 
 
