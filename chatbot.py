@@ -191,7 +191,12 @@ def teacher_sign():
         pin = request.form['pin']
         photo= request.files['photo']
         date=datetime.datetime.now().strftime("%y%m%d-%H%M%S")
+<<<<<<< HEAD
         photo.save(r"C:\Users\HP\PycharmProjects\chatbot\static\teacher_photo\\"+date+'.jpg')
+=======
+        photo.save(r"C:\Users\HP\PycharmProjects\chatbot\chatbot\static\teacher_photo\\"+date+'.jpg')
+        #photo.save(r"C:\Users\IDZ\Downloads\chatbot\static\teacher_photo\\"+date+'.jpg')
+>>>>>>> 059f7db19bd40d21604e921fad5e97efbed2adae
         path="/static/teacher_photo/"+date+'.jpg'
         gender = request.form['RadioGroup1']
         qualification = request.form['qualification']
@@ -601,6 +606,38 @@ def and_approvedevents():
         return demjson.encode(res)
 
 
+<<<<<<< HEAD
+=======
+@app.route('/and_viewprofile',methods=['post'])
+def and_viewprofile():
+    id=request.form['id']
+    db=Db()
+    qry=db.selectOne("select * from student where student_id='"+id+"'")
+    res = {}
+    if qry:
+        res['status'] = "ok"
+        res['data']=qry
+        return demjson.encode(res)
+    else:
+        res['status']="none"
+        return demjson.encode(res)
+
+
+@app.route('/and_approvedevents',methods=['post'])
+def and_approvedevents():
+    db=Db()
+    qry=db.select("select * from event,teacher where event.teacher_id=teacher.teacher_id and event.status='approved'")
+    res = {}
+    if qry:
+        res['status'] = "ok"
+        res['data']=qry
+        return demjson.encode(res)
+    else:
+        res['status']="none"
+        return demjson.encode(res)
+
+
+>>>>>>> 059f7db19bd40d21604e921fad5e97efbed2adae
 @app.route('/and_viewarticles',methods=['post'])
 def and_viewarticles():
     db=Db()
@@ -690,14 +727,24 @@ def and_sendfeedback():
 @app.route('/and_signup',methods=['post'])
 def and_signup():
     db=Db()
+<<<<<<< HEAD
     name = request.form['n']
     place = request.form['pla']
+=======
+    name = request.form['na']
+    place = request.form['pl']
+>>>>>>> 059f7db19bd40d21604e921fad5e97efbed2adae
     post = request.form['post']
     pin = request.form['pin']
     photo = request.files['pic']
     date = datetime.datetime.now().strftime("%y%m%d-%H%M%S")
+<<<<<<< HEAD
     # photo.save(r"D:\chatbot\static\student_photo\\" + date + '.jpg')
     photo.save(r"C:\Users\HP\PycharmProjects\chatbot\static\student_photo\\" + date + '.jpg')
+=======
+    # photo.save(r"C:\Users\HP\PycharmProjects\chatbot\static\teacher_photo\\"+date+'.jpg')
+    photo.save(r"C:\Users\HP\PycharmProjects\chatbot\chatbot\static\student_photo\\" + date + '.jpg')
+>>>>>>> 059f7db19bd40d21604e921fad5e97efbed2adae
     path = "/static/student_photo/" + date + '.jpg'
     gender = request.form['g']
     course = request.form['c']
@@ -748,6 +795,7 @@ def and_rate_ideas():
         res['status'] = "none"
         return demjson.encode(res)
 
+<<<<<<< HEAD
 
 
 
@@ -916,6 +964,8 @@ def chatbot_delete_chat():
 
 
 
+=======
+>>>>>>> 059f7db19bd40d21604e921fad5e97efbed2adae
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0")
