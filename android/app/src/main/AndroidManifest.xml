@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chatbot">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/chb"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/chb"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Chatbot"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".chatboat_msg"></activity>
+        <activity android:name=".custom_chatwithcouncillor" />
+        <activity android:name=".customchatwithstudent" />
+        <activity android:name=".Chatwithstudent" />
+        <activity android:name=".Chat" />
+        <activity android:name=".view_profile" />
+
+        <uses-library android:name="org.apache.http.legacy" />
+
+        <activity
+            android:name=".stud_home"
+            android:label="@string/title_activity_stud_home"
+            android:theme="@style/Theme.Chatbot.NoActionBar" />
+        <activity android:name=".signup" />
+        <activity android:name=".custom_view_group_members" />
+        <activity android:name=".view_group_members" />
+        <activity android:name=".custom_view_group" />
+        <activity android:name=".view_group" />
+        <activity android:name=".rate_ideas" />
+        <activity android:name=".rate_articles" />
+        <activity android:name=".custom_view_articles" />
+        <activity android:name=".view_articles" />
+        <activity android:name=".custom_view_ideas" />
+        <activity android:name=".view_ideas" />
+        <activity android:name=".custom_view_notifications" />
+        <activity android:name=".view_notifications" />
+        <activity android:name=".custom_view_approved_events" />
+        <activity android:name=".view_approved_evens" />
+        <activity android:name=".send_feddback" />
+        <activity android:name=".login" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ip_page">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

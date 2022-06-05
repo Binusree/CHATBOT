@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/profile"
+            android:title="PROFILE" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/notification"
+            android:title=" NOTIFICATIONS" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/articles"
+            android:title="ARTICLES" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/events"
+            android:title="EVENTS" />
+        <item
+            android:id="@+id/nav_bars"
+            android:icon="@drawable/ideas"
+            android:title="IDEAS" />
+        <item
+            android:id="@+id/nav_grp"
+            android:icon="@drawable/group"
+            android:title="GROUPS" />
+
+        <!--<item-->
+            <!--android:id="@+id/nav_grpmb"-->
+            <!--android:icon="@drawable/grpmem"-->
+            <!--android:title="Group Members" />-->
+
+        <item
+            android:id="@+id/nav_bar"
+            android:icon="@drawable/feedback"
+            android:title="FEEDBACK" />
+
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="CHAT" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="LOGOUT" />
+        </menu>
+    </item>
+
+</menu>
