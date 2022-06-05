@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -18,7 +17,7 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-6 text-center mb-5">
-					<h2 class="heading-section">VIEW GROUPS</h2>
+					<h2 class="heading-section">VIEW GROUP MEMBERS</h2>
 				</div>
 			</div>
 			<div class="row">
@@ -28,31 +27,23 @@
 						<table class="table">
 					    <thead class="thead-primary">
 					      <tr>
-      <th scope="col">#</th>
-      <th scope="col">group_name</th>
+					       <th scope="col">#</th>
+                          <th scope="col">student_name</th>
 
-      <th scope="col">&nbsp;</th>
+                          <th scope="col">&nbsp;</th>
 
+                        </tr>
 
-    </tr>
 					    </thead>
 					    <tbody>
 					      {% for i in data %}
-   <tr>
-              <td>{{ loop.index }}</td>
-                <td>&nbsp;{{ i.group_name }}</td>
-             <td>
-                 <a href="/delete_group/{{ i.group_id }}" onclick="return confirm('Are you sure to delete to {{ i.group_name }}? ')" class="btn btn-outline-dark">delete</a> <br /><p></p>
-
-
-            <a href="/add_group_membersssss/{{ i.group_id }}" class="btn btn-outline-dark">Add members</a><br/><p></p>
-                {% if data1['group_id']!=None %}
-              <a href="/view_group_members/{{ i.group_id }}" class="btn btn-outline-dark">view group members</a> <br />
-                {% else %}
-                NO MEMBERS
-                {% endif %}
-
-            </tr>                        {% endfor %}
+                    <tr>
+                      <td>{{ loop.index }}</td>
+                        <td>&nbsp;{{ i.student_name }}</td>
+                        <td>
+                            <a href="/delete_group_member/{{ i.group_member_id }}" onclick="return confirm('Are you sure to remove {{ i.student_name }}?')">delete</a> <br /></td>
+                  </tr>
+                        {% endfor %}
 					    </tbody>
 					  </table>
 					</div>
@@ -70,6 +61,7 @@
 </html>
 
 
+
 {#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">#}
 {#<html xmlns="http://www.w3.org/1999/xhtml">#}
 {#<head>#}
@@ -81,27 +73,21 @@
 {#<form action="" method="get">#}
 {#  <table width="200" border="1">#}
 {#    <caption>#}
-{#      view group#}
+{#      view group members#}
 {#    </caption>#}
 {#    <tr>#}
 {#      <th scope="col">#</th>#}
-{#      <th scope="col">group_name</th>#}
+{#      <th scope="col">student_name</th>#}
 {#   #}
 {#      <th scope="col">&nbsp;</th>#}
 {#      #}
 {#    </tr>#}
-{#      {% for i in data %}#}
+{#    {% for i in data %}#}
 {#    <tr>#}
 {#      <td>{{ loop.index }}</td>#}
-{#        <td>&nbsp;{{ i.group_name }}</td>#}
-{#     <td>#}
-{#      <a href="/delete_group/{{ i.group_id }}">delete</a> <br />#}
-{##}
-{#     </td>#}
-{#    <td>#}
-{#      <a href="/view_group_members/{{ i.group_id }}">view group members</a> <br />#}
-{##}
-{#     </td>#}
+{#        <td>&nbsp;{{ i.student_name }}</td>#}
+{#        <td>#}
+{#            <a href="/delete_group_member/{{ i.group_member_id }}">delete</a> <br /></td>#}
 {#    </tr>#}
 {#      {% endfor %}#}
 {#  </table>#}

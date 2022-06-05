@@ -118,7 +118,7 @@ def reject_teacher(tid):
 def view_events_approval():
     if session['lg'] == "lin":
         db = Db()
-        qry = db.select("SELECT * FROM event,teacher WHERE teacher.teacher_id=event.event_id ")
+        qry = db.select("SELECT * FROM `teacher`,`event` WHERE `teacher`.teacher_id=`event`.`teacher_id` ")
         return render_template('ADMIN/view events & approval.html', data=qry)
     else:
         return redirect('/')
@@ -271,26 +271,60 @@ def add_group():
     else:
         return redirect('/')
 
-@app.route('/add_group_members',methods=['get','post'])
-def add_group_members():
+# @app.route('/add_group_members',methods=['get','post'])
+# def add_group_members():
+#     if session['lg'] == "lin":
+#         if request.method=="POST":
+#             groupname = request.form['select']
+#             studentname = request.form['select2']
+#             db = Db()
+#             qry1=db.selectOne("select * from group_members WHERE group_id='"+groupname+"' and student_id='"+studentname+"' ")
+#             if qry1 is not None:
+#                 return '''<script>alert('Already added ');window.location="/add_group_members"</script>'''
+#             else:
+#                 qry = db.insert(" insert into group_members(group_id,student_id) VALUES('"+groupname+"','"+studentname+"')")
+#                 return '''<script>alert('added successfully');window.location="/teacher_homepage"</script>'''
+#         else:
+#             db=Db()
+#             qry=db.select("select * from groups where teacher_id='"+str(session['lid'])+"'")
+#             qry1=db.select("select * from student")
+#             return render_template('TEACHER/add group member.html',data=qry,data1=qry1)
+#     else:
+#         return redirect('/')
+
+
+
+
+
+
+@app.route('/add_group_membersssss/<gid>')
+def add_group_membersssss(gid):
     if session['lg'] == "lin":
-        if request.method=="POST":
-            groupname = request.form['select']
-            studentname = request.form['select2']
-            db = Db()
-            qry1=db.selectOne("select * from group_members WHERE group_id='"+groupname+"' and student_id='"+studentname+"' ")
-            if qry1 is not None:
-                return '''<script>alert('Already added ');window.location="/add_group_members"</script>'''
-            else:
-                qry = db.insert(" insert into group_members(group_id,student_id) VALUES('"+groupname+"','"+studentname+"')")
-                return '''<script>alert('added successfully');window.location="/teacher_homepage"</script>'''
-        else:
+
             db=Db()
-            qry=db.select("select * from groups where teacher_id='"+str(session['lid'])+"'")
             qry1=db.select("select * from student")
-            return render_template('TEACHER/add group member.html',data=qry,data1=qry1)
+            return render_template('TEACHER/adgrm.html',data=qry1,g=gid)
     else:
         return redirect('/')
+
+
+
+@app.route('/add_gsmembersssss/<gid>/<sid>')
+def add_gsmembersssss(gid,sid):
+    if session['lg'] == "lin":
+        db=Db()
+
+        qry1 = db.selectOne(  "select * from group_members WHERE group_id='" + gid + "' and student_id='" + sid + "' ")
+        if qry1 is not None:
+            return '''<script>alert('Already added ');window.location="/view_group"</script>'''
+        else:
+            qry = db.insert(" insert into group_members(group_id,student_id) VALUES('"+gid+"','"+sid+"')")
+            return '''<script>alert('added successfully');window.location="/teacher_homepage"</script>'''
+
+    else:
+        return redirect('/')
+
+
 
 
 
@@ -408,7 +442,7 @@ def view_group_members(gid):
     if session['lg'] == "lin":
         db = Db()
         qry = db.select("SELECT * FROM group_members,student WHERE group_members.student_id=student.student_id and group_members.group_id='"+gid+"'")
-        return render_template('TEACHER/view group members.html',data=qry)
+        return render_template('TEACHER/teacher_sign.html',data=qry)
     else:
         return redirect('/')
 
@@ -520,11 +554,17 @@ def and_login():
     password=request.form['p']
     db=Db()
     qry = db.selectOne("select * from login where username='" + username + "' and password='" + password + "'")
+    s=qry['login_id']
+    q2=db.selectOne("select * from student WHERE student_id='"+str(s)+"'")
+
     res={}
     if qry :
         res['status']="ok"
         res['type']=qry['user_type']
         res['lid']=qry['login_id']
+        res['email']=qry['username']
+        res['name']=q2['student_name']
+        res['photo']=q2['photo']
         return demjson.encode(res)
 
     else:
